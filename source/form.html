@@ -10,7 +10,7 @@
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-pic" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
-        <img class="page-header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="">
+        <img class="page-header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Cat Energy">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -39,15 +39,15 @@
         <fieldset class="main-form__item cat-info">
           <h2 class="visually-hidden">Информация о коте</h2>
           <p class="cat-info__item cat-info__item--name">
-            <label class="cat-info__label main-form__label" for="name">Имя:*</label>
+            <label class="cat-info__label form-label" for="name">Имя:*</label>
             <input class="main-form__input cat-info__input" type="text" id="name" name="name" placeholder="Барсик" required>
           </p>
           <p class="cat-info__item cat-info__item--weight">
-            <label class="cat-info__label main-form__label" for="weight">Вес(кг):*</label>
+            <label class="cat-info__label form-label" for="weight">Вес(кг):*</label>
             <input class="main-form__input cat-info__input" type="number" id="weight" name="weight" placeholder="7" required>
           </p>
           <p class="cat-info__item cat-info__item--age">
-            <label class="cat-info__label main-form__label" for="age">Возраст(лет):</label>
+            <label class="cat-info__label form-label" for="age">Возраст(лет):</label>
             <input class="main-form__input cat-info__input" type="number" id="age" name="age" placeholder="7">
           </p>
         </fieldset>
@@ -64,7 +64,7 @@
                   value="looseweight"
                   checked>
                 <span class="goal-box__control-mark"></span>
-                <span class="goal-box__control-label">Похудение</span>
+                <span class="goal-box__control-label form-label">Похудение</span>
               </label>
             </li>
             <li class="checkbox-list__item goal-box">
@@ -75,7 +75,7 @@
                   name="goal"
                   value="gainweight">
                 <span class="goal-box__control-mark"></span>
-                <span class="goal-box__control-label">Набор массы</span>
+                <span class="goal-box__control-label form-label">Набор массы</span>
               </label>
             </li>
             <li class="checkbox-list__item goal-box">
@@ -86,26 +86,26 @@
                   name="goal"
                   value="donknow">
                 <span class="goal-box__control-mark"></span>
-                <span class="goal-box__control-label">Не знаю (нужен ваш совет)</span>
+                <span class="goal-box__control-label form-label">Не знаю (нужен ваш совет)</span>
               </label>
             </li>
           </ul>
         </fieldset>
 
         <fieldset class="main-form__item owner-info">
-          <h2 class="owner-info__item owner-info__title">Контактные данные (владельца кота)</h2>
+          <h2 class="owner-info__title info-title">Контактные данные (владельца кота)</h2>
           <p class="owner-info__item owner-info__item--email">
-            <label class="main-form__label owner-info__label" for="email">E-mail:*</label>
+            <label class="owner-info__label form-label" for="email">E-mail:*</label>
            <input class="main-form__input owner-info__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
           </p>
           <p class="owner-info__item owner-info__item--phone">
-            <label class="main-form__label owner-info__label" for="phone">Телефон:*</label>
+            <label class="owner-info__label form-label" for="phone">Телефон:*</label>
             <input class="main-form__input owner-info__input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
           </p>
         </fieldset>
 
         <fieldset class="main-form__item comments-field">
-          <h2 class="comments-field__item comments-field__title">Комментарий</h2>
+          <h2 class="comments-field__title info-title">Комментарий</h2>
           <label class="main-form__label comments-field__label">
             <textarea class="main-form__input comments-field__input" name="comments"
               rows="8" cols="30">Расскажите обо всех повадках кота
@@ -114,7 +114,7 @@
         </fieldset>
 
         <fieldset class="main-form__item additional-checkbox">
-          <h2 class="additional-checkbox__item additional-checkbox__title">Дополнительно</h2>
+          <h2 class="additional-checkbox__title info-title">Дополнительно</h2>
           <ul class="additional-checkbox__list checkbox-list">
             <li class="checkbox-list__item additional-box">
               <label class="additional-box__label">
@@ -124,7 +124,7 @@
                   name="add"
                   checked>
                 <span class="additional-box__control-mark"></span>
-                <span class="additional-box__control-label">Сахарозаменитель</span>
+                <span class="additional-box__control-label form-label">Сахарозаменитель</span>
               </label>
             </li>
             <li class="checkbox-list__item additional-box">
@@ -134,7 +134,7 @@
                   type="checkbox"
                   name="add">
                 <span class="additional-box__control-mark"></span>
-                <span class="additional-box__control-label">Питьевая вода</span>
+                <span class="additional-box__control-label form-label">Питьевая вода</span>
               </label>
             </li>
             <li class="checkbox-list__item additional-box">
@@ -144,7 +144,7 @@
                   type="checkbox"
                   name="add">
                 <span class="additional-box__control-mark"></span>
-                <span class="additional-box__control-label">Молоко</span>
+                <span class="additional-box__control-label form-label">Молоко</span>
               </label>
             </li>
             <li class="checkbox-list__item additional-box">
@@ -154,7 +154,7 @@
                   type="checkbox"
                   name="add">
                 <span class="additional-box__control-mark"></span>
-                <span class="additional-box__control-label">Витамины</span>
+                <span class="additional-box__control-label form-label">Витамины</span>
               </label>
             </li>
           </ul>
@@ -177,11 +177,14 @@
           <h2 class="visually-hidden">Контакты офиса Cat Energy.</h2>
           <p class="footer-contacts__invitation">Приглашаем к сотрудничеству дилеров!</p>
           <address class="footer-contacts__address">
-            <p class="footer-contacts__address__street-address">ул. Большая Конюшенная, д. 19/8</p>
-            <p class="footer-contacts__address__city-address">Санкт-Петербург</p>
+            <p class="footer-contacts__address">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="footer-contacts__address--city">Санкт-Петербург</p>
           </address>
           <p class="footer-contacts__map">
-            <img class="footer-contacts__map__image" width="320" height="362" src="images/map.jpg" alt="Карта Санкт-Петербурга">
+            <!--<img class="footer-contacts__map__image" width="320" height="362" src="images/map.jpg" alt="Карта Санкт-Петербурга">-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7994.603450858922!2d30.317711443740404!3d59.937935387156344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sqa!4v1669656616512!5m2!1sru!2sqa"
+            width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
           </p>
           </section>
       </div>
