@@ -1,1 +1,98 @@
-// Начните писать стили здесь
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/oswald/oswaldmedium.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/oswald/oswaldregular.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lato/lato-regular.woff2");
+  font-display: swap;
+}
+
+@main-color: #68B738;
+
+html {
+  height: 100%;
+}
+
+.page-body {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+
+  min-height: 100%;
+  width: 320px;
+
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.lato {
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #444444;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: @main-color;
+  padding: 14px 70px;
+
+  border: none;
+
+  cursor: pointer;
+}
+
+@import "./blocks/main-nav.less";
+@import "./blocks/main-container.less";
+@import "./blocks/hero.less";
+@import "./blocks/goals.less";
+@import "./blocks/explanations.less";
+@import "./blocks/example.less";
+@import "./blocks/footer-contacts.less";
+@import "./blocks/copyright.less";
+@import "./blocks/main-form-page.less";
+@import "./blocks/main-form.less";
+@import "./blocks/cat-info.less";
+@import "./blocks/goals-checkbox.less";
+@import "./blocks/additional-checkbox.less";
+@import "./blocks/catalog-page.less";
+@import "./blocks/product-list.less";
+@import "./blocks/product.less";
+@import "./blocks/additions.less";
+@import "./blocks/addon-list.less";
+@import "./blocks/promo.less";
