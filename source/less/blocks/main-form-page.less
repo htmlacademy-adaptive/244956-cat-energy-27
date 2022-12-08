@@ -1,3 +1,23 @@
+.main-form-page {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+  padding: @padding-mobile;
+  background-color: @white;
+
+  @media (min-width: @tablet) {
+    width: 768px;
+    padding: 0 60px;
+  };
+
+  @media (min-width: @desktop) {
+    width: 1280px;
+    padding: @padding-desktop;
+  }
+}
+
+
 .main-form-page__title {
   font-weight: 400;
   font-size: 36px;

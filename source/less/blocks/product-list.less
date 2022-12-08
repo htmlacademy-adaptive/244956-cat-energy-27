@@ -1,6 +1,16 @@
 .product-list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
+  .list-style;
 
+  display: grid;
+  grid-template-columns: 280px;
+
+
+  @media (min-width: @tablet) {
+    grid-template-columns: 320px 320px;
+  }
+
+  @media (min-width: @desktop) {
+    grid-template-columns: repeat(4, 245px);
+    gap: 80px;
+  }
 }

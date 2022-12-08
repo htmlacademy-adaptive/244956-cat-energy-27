@@ -1,3 +1,32 @@
+.main-form {
+  display: grid;
+  grid-template-columns: 280px;
+  grid-template-rows: auto(6, repeat);
+  grid-template-areas:
+      "cat"
+      "goals"
+      "owner"
+      "comments"
+      "add"
+      "button";
+
+
+  @media (min-width: @tablet) {
+    grid-template-columns: 640px;
+    grid-template-rows: auto(6, repeat);
+  };
+
+  @media (min-width: @desktop) {
+    grid-template-columns: 600px 600px;
+    grid-template-areas:
+      "cat goals"
+      "owner owner"
+      "comments comments"
+      "add add"
+      "button button";
+  }
+}
+
 .main-form__item:not(.button) {
   border: none;
   margin: 0;
@@ -9,7 +38,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #444444;
+  color: @grey;
 }
 
 .main-form__input {
@@ -18,7 +47,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #444444;
+  color: @grey;
 }
 
 .main-form__input {
@@ -26,7 +55,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #444444;
+  color: @grey;
 }
 
 .info-title {
@@ -35,9 +64,4 @@
   line-height: 26px;
 }
 
-.main-form__aside {
-  .lato;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-}
+
