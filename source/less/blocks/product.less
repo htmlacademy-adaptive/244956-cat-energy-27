@@ -2,7 +2,13 @@
   border-top: 1px solid #EBEBEB;
   border-bottom: 1px solid #EBEBEB;
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet) {
+    flex-direction: column;
+    flex-wrap: no-wrap;
+  }
 }
 
 .product__name-link {
@@ -10,7 +16,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #222222;
+  color: @light-black;
   text-transform: uppercase;
 }
 
@@ -19,14 +25,14 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: @grey;
   }
 
 .product__name {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #222222;
+  color: @light-black;
   text-transform: uppercase;
 }
 
@@ -34,5 +40,5 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: @grey;
 }

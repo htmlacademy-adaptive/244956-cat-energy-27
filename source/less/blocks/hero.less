@@ -1,5 +1,6 @@
 .hero {
   position: relative;
+  margin-bottom: 40px;
 }
 
 .hero__wrapper {
@@ -7,20 +8,101 @@
   background-repeat: no-repeat;
   background-image: linear-gradient(180deg,rgba(104, 183, 56, 0.9),
                 rgba(104, 183, 56, 0.9)), url("../../images/hero-background.png");
-  padding-bottom: 165px;
+  background-position: center;
+  background-size: 100%;
+
+  padding-top: 27px;
+  padding-bottom: 170px;
+  margin-bottom: 135px;
+
+  @media (min-width: @tablet) {
+    background-image: none;
+    background-color: @white;
+  }
+
 }
 
 .page-title {
   font-size: 36px;
   line-height: 36px;
-  color: #ffffff;
+  color: @white;
   font-family: "Oswald";
   font-weight: 400;
+
+  width: 280px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media (min-width: @tablet) {
+    padding-left: 117px;
+    width: 420px;
+    margin:0;
+
+    color: #111111;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 40px;
+  };
 }
 
  .hero__slogan {
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: @white;
+  text-align: center;
+
+  @media (min-width: @tablet) {
+    width: 420px;
+    padding-left: 117px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #111111;
+    margin-bottom: 400px;
+    };
+
+  @media (min-width: @desktop) {
+    margin-bottom: 182px;
+  }
+}
+
+.hero__hero-image {
+  position: absolute;
+  top: 150px;
+  left: calc(50% - 140px);
+
+  @media (min-width: @tablet) {
+    width: 709px;
+    height: 609px;
+    top: 250px;
+    left: 0;
+  };
+
+  @media (min-width: @desktop) {
+    left: 500px;
+    top: 50px;
+  }
+
+}
+
+.hero__button {
+  margin-left: 40px;
+  margin-bottom: 20px;
+
+
+  @media (min-width: @tablet) {
+    position: absolute;
+    top: 230px;
+    left: 40px;
+    width: 245px;
+    height: 54px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px 26px;
+  };
+
+  @media (min-width: @desktop) {
+    left: 100px;
+  }
 }

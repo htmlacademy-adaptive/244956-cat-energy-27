@@ -1,0 +1,52 @@
+html {
+  height: 100%;
+}
+
+.page-body {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+
+  min-height: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.lato {
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #444444;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: @main-color;
+  padding: 14px 70px;
+
+  border: none;
+
+  cursor: pointer;
+}
