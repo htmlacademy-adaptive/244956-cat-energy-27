@@ -19,9 +19,9 @@
   grid-template-rows: repeat(3, 65px);
 
   @media (min-width: @tablet) {
-  padding: @padding-tablet;
-  grid-template-columns: repeat(3, 240px);
-  grid-template-rows: 147px;
+    padding: @padding-tablet;
+    grid-template-columns: repeat(3, 240px);
+    grid-template-rows: 147px;
   };
 
   @media (min-width: @desktop) {
@@ -30,13 +30,73 @@
   }
 }
 
+.page-footer__item {
+  text-align: center;
+  align-self: center;
+
+  @media (min-width: @tablet) {
+    text-align: left;
+  }
+}
+
+.footer-logo {
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.social {
+  margin: 0 auto;
+}
+
 .social__list {
   display: flex;
   .list-style;
+  margin: 0 auto;
+  width: 107px;
+  justify-content: space-between;
 }
 
-.social__item {
+.social__link {
   width: 26px;
   height: 17px;
-  background: @black;
+  background: @darker-white;
+}
+
+.social__link:hover .social__color {
+  fill: @main-color;
+}
+
+.social__link:active .social__color {
+  fill: @main-color;
+  opacity: 0.3;
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet) {
+    justify-content: end;
+  }
+}
+
+.copyright__link:hover .copyright__color {
+  fill: @main-color;
+}
+
+.copyright__link:active {
+  opacity: 0.6;
+  .copyright__color {
+    opacity: 0.6;
+  }
+}
+
+.copyright__text {
+  @media (min-width: @tablet) {
+    margin-right: 25px;
+  }
 }

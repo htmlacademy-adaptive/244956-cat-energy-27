@@ -27,6 +27,7 @@
   @media (min-width: @desktop) {
     grid-template-columns: 890px 250px;
     padding: 0 100px;
+    grid-column-gap: 80px;
   }
 }
 
@@ -34,6 +35,17 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  margin-bottom: 41px;
+
+  @media (min-width: @tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 160px;
+}
+
+  @media (min-width: @desktop) {
+    margin-left: 100px;
+  }
 }
 
 .product-list {

@@ -1,7 +1,7 @@
 .main-form-page {
   display: flex;
   flex-direction: column;
-  width: 320px;
+  width: 330px;
   margin: 0 auto;
   padding: @padding-mobile;
   background-color: @white;
@@ -22,6 +22,12 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: @tablet) {
+    font-size: 60px;
+    line-height: 60px;
+
+  }
 }
 
 .main-form-page__subtitle {
@@ -29,4 +35,10 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  width: 350px;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

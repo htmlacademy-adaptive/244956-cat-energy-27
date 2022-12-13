@@ -1,20 +1,114 @@
 .additional-checkbox {
   grid-area: add;
+  }
+
+  .additional-checkbox__title {
+    width: 200px;
+    position: relative;
+  }
+
+.additional-checkbox__title::after {
+  position: absolute;
+  content: "";
+  width: 300px;
+  height: 2px;
+  background-color: @main-color;
+  right: -257px;
+  top: 16px;
+
+  @media (min-width: @tablet) {
+    width: 500px;
+    right: -533px;
+    top: 22px;
+}
+  @media (min-width: @desktop) {
+    width: 1000px;
+    left: 246px;
+  }
+}
+
+.additional-checkbox__title::before {
+  @media (min-width: @tablet) {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 2px;
+  background-color: @main-color;
+  right: 220px;
+  top: 22px;
+}
+  @media (min-width: @desktop) {
+    width: 92px;
+    left: -112px;
+  }
 }
 
 .additional-checkbox__list {
   display: grid;
   grid-template-columns: 280px;
   grid-template-rows: auto(4, repeat);
+  margin-bottom: 30px;
 
   @media (min-width: @tablet) {
     grid-template-columns: 320px 320px;
     grid-template-rows: auto(2, repeat);
+    border: none;
   };
 
+  @media (min-width: @desktop) {
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: auto;
+    grid-column-gap: 30px;
+  }
+}
 
+.additional-box {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.additional-box__control-mark {
+  position: absolute;
+  top: -6px;
+  left: -44px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #CDCDCD;
+
+
+  @media (min-width: @tablet) {
+    width: 40px;
+    height: 40px;
+    left: -50px;
+    top: -4px;
+  }
+}
+
+.control-input[type="checkbox"]:checked + .additional-box__control-mark::before {
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  width: 22px;
+  height: 22px;
+  background-image: url(../../images/v-icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  content: "";
+
+  @media (min-width: @tablet) {
+    width: 24px;
+    height: 24px;
+    top: 9px;
+    left: 9px;
+  }
 }
 
 .additional-box__control-label {
-  color: #000000;
+  color: #222222;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
