@@ -110,21 +110,29 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-  align-self: center;
+  width: 232px;
+  display: flex;
+  justify-content: space-between;
 
 
   @media (min-width: @tablet) {
+    flex-direction: column;
+    justify-content: left;
     font-size: 20px;
     margin-left: 235px;
-    align-self: start;
+
     width: 180px;
     margin-top: 0;
     text-align: right;
+
   }
   @media (min-width: @desktop) {
-    width: 325px;
+    width: 320px;
     margin-left: 0;
-    text-align: center;
+
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
 }
 }
 
