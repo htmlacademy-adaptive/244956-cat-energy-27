@@ -1,6 +1,6 @@
 .main-form {
   display: grid;
-  grid-template-columns: 280px;
+  grid-template-columns: 300px;
   grid-template-rows: auto(6, repeat);
   grid-template-areas:
       "cat"
@@ -12,7 +12,7 @@
 
 
   @media (min-width: @tablet) {
-    grid-template-columns: 640px;
+    grid-template-columns: 700px;
     grid-template-rows: auto(6, repeat);
   };
 
@@ -39,6 +39,12 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @grey;
+  margin-right: 12px;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .main-form__input {
@@ -48,20 +54,22 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @grey;
-}
 
-.main-form__input {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: @grey;
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .info-title {
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+
+  @media (min-width: @tablet) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 

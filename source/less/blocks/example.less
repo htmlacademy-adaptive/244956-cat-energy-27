@@ -36,29 +36,73 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: @tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__text {
   .lato;
+  width: 276px;
+  margin-bottom: 34px;
   @media (min-width: @tablet) {
     width: 700px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  @media (min-width: @desktop) {
+    width: 440px;
   }
 }
 
 .stats-list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
+  .list-style;
+  display: flex;
+
+  align-items: center;
+  margin-bottom: 50px;
+
+
+}
+.stats-list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url(../../images/weight-back.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 0;
+    top: 0;
+  }
+
+  @media (min-width: @desktop) {
+    margin-right: 130px;
+  }
 }
 
 .stats-list__number {
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  position: relative;
+
+  @media (min-width: @tablet) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .stats-list__description {
   .lato;
+  font-size: 12px;
+  margin: 0;
 }
 
 .example__info {
@@ -66,6 +110,30 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  width: 232px;
+  display: flex;
+  justify-content: space-between;
+
+
+  @media (min-width: @tablet) {
+    flex-direction: column;
+    justify-content: left;
+    font-size: 20px;
+    margin-left: 235px;
+
+    width: 180px;
+    margin-top: 0;
+    text-align: right;
+
+  }
+  @media (min-width: @desktop) {
+    width: 320px;
+    margin-left: 0;
+
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+}
 }
 
 .example__compare-slider {

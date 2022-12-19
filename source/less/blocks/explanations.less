@@ -1,6 +1,7 @@
 .explanations {
   margin: 0 auto;
   width: 320px;
+  margin-bottom: 60px;
 
   @media (min-width: @tablet) {
     width: 768px;
@@ -28,19 +29,25 @@
   font-size: 36px;
   line-height: 40px;
   color: @black;
+
+  @media (min-width: @tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
  .explanation {
   .list-style;
   display: grid;
   grid-template-columns: 280px;
-  grid-template-rows: repeat(4, 54px);
+  grid-template-rows: repeat(4, 60px);
   grid-row-gap: 20px;
 
   @media (min-width: @tablet) {
     grid-template-columns: 240px 240px;
     grid-template-rows: 240px 240px;
-    grid-gap: 60px;
+    grid-column-gap: 120px;
+    grid-row-gap: 60px;
   };
 
   @media (min-width: @desktop) {
@@ -50,8 +57,82 @@
   }
 }
 
+.explanation__item {
+  display: grid;
+  grid-template-columns: 60px 200px;
+  gap: 20px;
+
+  @media (min-width: @tablet) {
+    grid-template-columns: 80px 140px;
+    grid-template-rows: 80px 80px;
+    gap: 30px;
+
+    background-repeat: no-repeat;
+    background-position: 80% 0;
+}
+}
+
+.explanation__item--functional {
+  @media (min-width: @tablet) {
+    background-image: url(../../images/1.png);
+  }
+}
+
+.explanation__item--potion {
+  @media (min-width: @tablet) {
+    background-image: url(../../images/2.png);
+  }
+}
+
+.explanation__item--substitute {
+  @media (min-width: @tablet) {
+    background-image: url(../../images/3.png);
+  }
+}
+
+.explanation__item--month {
+  @media (min-width: @tablet) {
+    background-image: url(../../images/4.png);
+  }
+}
+
+.explanation__deco {
+  background-color: @main-color;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.explanation__item--functional .explanation__deco {
+  background-image: url(../../images/icon-leaf.png);
+  background-size: 25px 28px;
+}
+
+.explanation__item--potion .explanation__deco {
+  background-image: url(../../images/icon-potion.png);
+  background-size: 25px 28px;
+}
+
+.explanation__item--substitute .explanation__deco {
+  background-image: url(../../images/icon_eat.png);
+  background-size: 25px 28px;
+}
+
+.explanation__item--month .explanation__deco {
+  background-image: url(../../images/icon-clock.png);
+  background-size: 25px 28px;
+}
+
 .explanation__text {
   .lato;
   color: @grey;
   line-height: 18px;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet) {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

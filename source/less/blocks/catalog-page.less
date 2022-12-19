@@ -1,32 +1,28 @@
 .catalog-page {
-  width: 320px;
   margin: 0 auto;
-  padding: @padding-mobile;
   display: flex;
   flex-direction: column;
-
-  @media (min-width: @tablet) {
-   width: 758px;
-  }
-
-   @media (min-width: @desktop) {
-    width: 1280px;
-   }
 }
 
 .catalog {
+  width: 320px;
+  margin: 0 auto;
+  padding: @padding-mobile;
   display: grid;
   grid-template-columns: 280px;
 
 
   @media (min-width: @tablet) {
+    width: 758px;
     grid-template-columns: 758px;
     padding: 0 30px;
   }
 
   @media (min-width: @desktop) {
+    width: 1280px;
     grid-template-columns: 890px 250px;
     padding: 0 100px;
+    grid-column-gap: 80px;
   }
 }
 
@@ -34,6 +30,17 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  margin-bottom: 41px;
+
+  @media (min-width: @tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 160px;
+}
+
+  @media (min-width: @desktop) {
+    margin-left: 100px;
+  }
 }
 
 .product-list {

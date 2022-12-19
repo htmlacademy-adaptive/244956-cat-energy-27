@@ -1,14 +1,25 @@
 .page-footer {
+
+  background-color: @white;
+}
+
+.footer-contacts-block {
   position: relative;
+  margin: 0 auto;
+
+  @media (min-width: @desktop) {
+    max-width: 1500px;
+  }
 }
 
 .footer-container {
   width: 320px;
   padding: @padding-mobile;
+  background-color: @white;
 
   @media (min-width: @tablet) {
     width: 768px;
-  };
+  }
 
   @media (min-width: @desktop) {
     position: absolute;
@@ -17,19 +28,32 @@
     background: @white;
     top: 100px;
     left: 100px;
+    z-index: 2;
   }
 }
 
 .footer-contacts {
   display: flex;
   justify-content: space-between;
+  padding: 20px 26px;
+ @media (min-width: @desktop) {
+    padding-top: 40px;
+  }
 }
+
 
 .footer-contacts__invitation {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  width: 140px;
+  margin: 0;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .footer-contacts__address {
@@ -37,22 +61,71 @@
   font-size: 14px;
   line-height: 20px;
   font-style: normal;
+  width: 148px;
+
+  @media (min-width: @tablet) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    width: 160px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 155px;
+  }
+}
+
+.footer-contacts__address-item {
+  margin: 0;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 15px;
+  }
 }
 
 .footer-contacts__map {
   min-width: 320px;
   height: 362px;
+  position: relative;
+  margin-bottom: 0;
 
   @media (min-width: @tablet) {
   min-width: 768px;
   height: 400px;
-  outline: 1px solid black;
+
 };
 
 @media (min-width: @desktop) {
-  min-width: 1280px;
+  min-width: 1200px;
   height: 400px;
+  max-width: 1500px;
+  margin: 0 auto;
+};
+
+&::before {
+  position:absolute;
+  content:"";
+  width: 57px;
+  height: 53px;
+  z-index: 3;
+  background-image: url(../../images/map-pin.png.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: calc(50% - 40px);
+  left: calc(50% - 40px);
+
+  @media (min-width: @tablet) {
+    width: 113px;
+    height: 106px;
+  }
+
+  @media (min-width: @desktop) {
+    top: calc(50% - 40px);
+    left: 723px;
+  }
 }
 }
+
+
 
 

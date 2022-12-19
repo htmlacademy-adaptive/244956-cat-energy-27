@@ -1,10 +1,9 @@
 .addon-list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-
+  .list-style;
   display: flex;
   flex-direction: column;
+  margin-bottom: 35px;
+
 }
 
 .addon {
@@ -12,9 +11,24 @@
   grid-template-columns: 280px;
   grid-template-rows: repeat(3, auto);
 
+  padding-top: 13px;
+  padding-bottom: 20px;
+  border-top: 1px solid #CDCDCD;
+  border-bottom: 1px solid #CDCDCD;
+
   @media (min-width: @tablet) {
-    grid-template-columns: 354px 354px;
+    grid-template-columns: 334px 364px;
     grid-template-rows: repeat(2, auto);
+    border: 1px solid #CDCDCD;
+    padding: 28px 38px;
+  }
+
+  @media (min-width: @desktop) {
+    grid-template-columns: 291px 334px 244px;
+    grid-template-rows: auto;
+    padding: 0;
+    border-left: none;
+    border-right: none;
   }
 }
 
@@ -22,9 +36,23 @@
   text-decoration: none;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 16px;
   color: #222222;
   text-transform: uppercase;
+  text-align: left;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  @media (min-width: @desktop) {
+    padding-left: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }
 
 .addon__text {
@@ -33,11 +61,46 @@
   font-size: 14px;
   line-height: 14px;
   display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet) {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: @desktop) {
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
 }
 
 .addon__button {
+  width: 280px;
+  display: block;
+  box-sizing: border-box;
+  padding: 10px 110px;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+
+
   @media (min-width: @tablet) {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
+    width: 633px;
+    margin-left: 20px;
+    padding: 7px 285px;
   }
+
+  @media (min-width: @desktop) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    width: 244px;
+    padding: 10px 93px;
+    height: 40px;
+    margin-top: 23px;
+}
 }

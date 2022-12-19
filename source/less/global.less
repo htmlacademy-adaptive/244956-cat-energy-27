@@ -49,4 +49,31 @@ html {
   border: none;
 
   cursor: pointer;
+
+  &:hover {
+    background-color: #5EAA2F;
+  };
+
+  &:active {
+    background-color: #5EAA2F;
+    opacity: 0.7;
+  }
+}
+
+.main-form__input {
+  padding: 14px 20px;
+  border: 1px solid #E7E7E7;
+
+  &:hover {
+    border: 1px solid #CDCDCD;
+  }
+
+  &:focus {
+    border: 1px solid #444444;
+    border-radius: 0;
+  }
+
+  .main-form__input--invalid {
+    border: 1px solid #FF8282;
+  }
 }

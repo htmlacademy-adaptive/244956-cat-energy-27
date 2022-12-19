@@ -3,4 +3,44 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  position: relative;
+
+  @media (min-width: @tablet) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 80px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 53px;
+    height: 2px;
+    background-color: @main-color;
+    top: 14px;
+    right: -23px;
+
+    @media (min-width: @tablet) {
+      width: 328px;
+      right: -12px;
+      top: 23px;
+    }
+
+    @media (min-width: @desktop) {
+      width: 957px;
+      right: -428px;
+    }
+  }
+
+  &::before {
+   @media (min-width: @desktop) {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 2px;
+    background-color: @main-color;
+    top: 14px;
+    left: -122px;
+   }
+  }
 }

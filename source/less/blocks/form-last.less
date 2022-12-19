@@ -1,5 +1,11 @@
 .form-last {
   grid-area: button;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet) {
+    flex-direction: row;
+  }
 }
 
 .main-form__aside {
@@ -7,4 +13,35 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+  text-align: center;
+
+  @media (min-width: @tablet) {
+    margin-left: 64px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-left: 84px;
+  }
+}
+
+.button-form {
+  box-sizing: border-box;
+  width: 280px;
+  padding: 10px 60px;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet) {
+   margin-bottom: 70px;
+   font-size: 20px;
+   line-height: 20px;
+   width: 336px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 82px;
+    width: 568px;
+    padding: 12px 165px;
+  }
 }

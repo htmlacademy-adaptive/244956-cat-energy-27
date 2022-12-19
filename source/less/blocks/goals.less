@@ -27,7 +27,7 @@ width: 768px;
   .list-style;
   display: grid;
   grid-template-columns: 280px;
-  grid-template-rows: 266px 266px;
+  grid-template-rows: auto auto;
   grid-row-gap: 20px;
 
   @media (min-width: @tablet) {
@@ -37,7 +37,7 @@ width: 768px;
   }
 
   @media (min-width: @desktop) {
-    grid-template-columns: 500px 500px;
+    grid-template-columns: 520px 520px;
     grid-template-rows: 372px;
     grid-gap: 80px;
   }
@@ -45,19 +45,88 @@ width: 768px;
 
 .goal {
   background-color: @darker-white;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 33px;
+
+  background-repeat: no-repeat;
+  background-position: 20px 30px;
+
+
+  @media (min-width: @tablet) {
+    padding-left: 50px;
+    background-position: 95% center;
+  }
+
+  @media (min-width: @desktop) {
+    background-position: 50px 30px;
+
+  }
+
+  &--loseweight {
+  background-image: url(../../images/cat_back.png);
+  background-size: 50px 53px;
+
+  @media (min-width: @tablet) {
+    background-size: 200px 200px;
+    background-image: url(../../images/cat-black-tablet.png);
+
+  @media (min-width: @desktop) {
+    background-size: 106px 100px;
+  }
+  }
+};
+
+  &--gainweight {
+    background-image: url(../../images/panther-black.png);
+    background-size: 67px 53px;
+
+    @media (min-width: @tablet) {
+      background-size: 268px 200px;
+      background-image: url(../../images/panther-black-tablet.png);
+    };
+
+    @media (min-width: @desktop) {
+      background-size: 134px 100px;
+    }
+  };
 }
 
 .goal__header {
+  height: 54px;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
   font-weight: 400;
+  padding-left: 75px;
+  padding-top: 15px;
+
+  @media (min-width: @tablet) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 0;
+  };
+
+  @media (min-width: @desktop) {
+    padding-left: 142px;
+  }
 }
 
 .goal__text {
   .lato;
   line-height: 18px;
   color: @grey;
+  margin-bottom: 40px;
+
+  @media (min-width: @tablet) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 340px;
+  };
+
+  @media (min-width: @desktop) {
+    width: 450px;
+  }
 }
 
 .goal__link {
@@ -67,4 +136,27 @@ width: 768px;
   line-height: 16px;
   text-transform: uppercase;
   color: @black;
+  display: block;
+  width: 165px;
+  position: relative;
+
+  background-image: url(../../images/icon_arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 100px center;
+
+  &:active {
+    opacity: 0.3;
+  };
+
+  @media (max-width: @mobile-only) {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 240px;
+    height: 2px;
+    background-color: #D9D9D9;
+    left: 0;
+    top: -22px;
+  }
+}
 }

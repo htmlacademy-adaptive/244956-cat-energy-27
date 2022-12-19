@@ -3,13 +3,17 @@
   flex-direction: column;
 
   @media (min-width: @tablet) {
+    width: 780px;
     flex-direction: row;
     justify-content: start;
     padding: @padding-tablet;
-    margin: 0;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop) {
+    margin: 0 auto;
+    min-width: 1200px;
+    max-width: 1500px;
     justify-content: space-between;
     padding: 70px 110px;
   }
@@ -21,21 +25,33 @@
   display: grid;
   grid-template-columns: auto 40px;
   padding: 10px 20px;
+  position: relative;
 
   @media (min-width: @tablet) {
     display: block;
-    width: 175px;
+    width: 180px;
     margin: 0;
   }
+
+    @media (min-width: @desktop) {
+margin-right: 90px;
+    }
+
 }
 
 .page-header__logo {
   height: 38px;
   display: flex;
+  align-items: center;
+
 
   @media (min-width: @tablet) {
     display: none;
   }
+}
+
+.page-header__logo-text {
+  margin-left: 45px;
 }
 
 .page-header__logo--tablet {
@@ -43,15 +59,16 @@
 
   @media (min-width: @tablet) {
     display: block;
+    cursor: pointer;
+    width: 180px;
+  };
+
+  @media (min-width: @desktop) {
+    &:hover {
+      opacity: 0.8;
+    }
+    &:active{
+      opacity: 0.6;
+    }
   }
 }
-
-.main-nav__toggle {
-  width: 25px;
-  height: 25px;
-
-  @media (min-width: @tablet) {
-    display: none;
-  };
-}
-
