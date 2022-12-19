@@ -1,6 +1,15 @@
 .page-footer {
-  position: relative;
+
   background-color: @white;
+}
+
+.footer-contacts-block {
+  position: relative;
+  margin: 0 auto;
+
+  @media (min-width: @desktop) {
+    max-width: 1500px;
+  }
 }
 
 .footer-container {
@@ -10,7 +19,7 @@
 
   @media (min-width: @tablet) {
     width: 768px;
-  };
+  }
 
   @media (min-width: @desktop) {
     position: absolute;
@@ -87,8 +96,10 @@
 };
 
 @media (min-width: @desktop) {
-  min-width: 1280px;
+  min-width: 1200px;
   height: 400px;
+  max-width: 1500px;
+  margin: 0 auto;
 };
 
 &::before {

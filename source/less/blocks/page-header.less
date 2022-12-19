@@ -7,11 +7,13 @@
     flex-direction: row;
     justify-content: start;
     padding: @padding-tablet;
-    margin: 0;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop) {
-    width: 1200px;
+    margin: 0 auto;
+    min-width: 1200px;
+    max-width: 1500px;
     justify-content: space-between;
     padding: 70px 110px;
   }
@@ -30,6 +32,11 @@
     width: 180px;
     margin: 0;
   }
+
+    @media (min-width: @desktop) {
+margin-right: 90px;
+    }
+
 }
 
 .page-header__logo {
