@@ -6,44 +6,10 @@
   position: relative;
 }
 
-.comments-field__title::after {
-  position: absolute;
-  content: "";
-  width: 195px;
-  height: 2px;
-  background-color: @main-color;
-  right: -25px;
-  top: 16px;
 
-  @media (min-width: @tablet) {
-    width: 500px;
-    right: 0;
-    top: 20px;
-}
-  @media (min-width: @desktop) {
-    width: 1024px;
-    left: 206px;
-  }
-}
-
-.comments-field__title::before {
-  @media (min-width: @tablet) {
-  position: absolute;
-  content: "";
-  width: 40px;
-  height: 2px;
-  background-color: @main-color;
-  right: 721px;
-  top: 20px;
-}
-  @media (min-width: @desktop) {
-    width: 92px;
-    left: -112px;
-  }
-}
 
 .comments-field__input {
-  width: 254px;
+  width: 244px;
 
   @media (min-width: @tablet) {
     width: 653px;

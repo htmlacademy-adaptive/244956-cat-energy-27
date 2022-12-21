@@ -5,14 +5,14 @@
 .footer-info-block {
   width: 320px;
   margin: 0 auto;
+  box-sizing: border-box;
 
   @media (min-width: @tablet) {
     width: 768px;
-  };
+  }
 
   @media (min-width: @desktop) {
-    min-width: 1200px;
-
+   width: 1200px;
   }
 }
 
@@ -21,16 +21,17 @@
   display: grid;
   grid-template-columns: 280px;
   grid-template-rows: repeat(3, 65px);
+  box-sizing: border-box;
 
   @media (min-width: @tablet) {
     padding: @padding-tablet;
     grid-template-columns: repeat(3, 240px);
     grid-template-rows: 147px;
-  };
+  }
 
   @media (min-width: @desktop) {
     padding: @padding-desktop;
-    grid-template-columns: repeat(3, 400px);
+    grid-template-columns: repeat(3, 330px);
   }
 }
 
@@ -44,6 +45,8 @@
 }
 
 .footer-logo {
+
+
   &:hover {
     opacity: 0.8;
   }

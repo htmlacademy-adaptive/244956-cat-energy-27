@@ -3,45 +3,9 @@
   }
 
   .additional-checkbox__title {
-    width: 200px;
-    position: relative;
+      position: relative;
   }
 
-.additional-checkbox__title::after {
-  position: absolute;
-  content: "";
-  width: 168px;
-  height: 2px;
-  background-color: @main-color;
-  right: -120px;
-  top: 16px;
-
-  @media (min-width: @tablet) {
-    width: 466px;
-    right: -508px;
-    top: 22px;
-}
-  @media (min-width: @desktop) {
-    width: 1000px;
-    left: 246px;
-  }
-}
-
-.additional-checkbox__title::before {
-  @media (min-width: @tablet) {
-  position: absolute;
-  content: "";
-  width: 40px;
-  height: 2px;
-  background-color: @main-color;
-  right: 220px;
-  top: 22px;
-}
-  @media (min-width: @desktop) {
-    width: 92px;
-    left: -112px;
-  }
-}
 
 .additional-checkbox__list {
   display: grid;
