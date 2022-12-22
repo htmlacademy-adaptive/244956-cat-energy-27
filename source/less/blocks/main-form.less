@@ -1,5 +1,6 @@
 .main-form {
   display: grid;
+  z-index: 0;
   grid-template-columns: 280px;
   grid-template-rows: auto(6, repeat);
   grid-template-areas:
@@ -68,7 +69,6 @@
   box-sizing: border-box;
   width: fit-content;
   background-color: @white;
-  z-index: 3;
   padding-right: 2px;
 
   @media (min-width: @tablet) {
@@ -77,4 +77,25 @@
   }
 }
 
+.owner-info__title::before,
+.comments-field__title::before,
+.additional-checkbox__title::before {
+  position: absolute;
+  content: "";
+  width: 205px;
+  height: 2px;
+  background-color: @main-color;
+  left: 91px;
+  top: 16px;
+  z-index: -1;
 
+  @media (min-width: @tablet) {
+    top: 23px;
+    left: -34px;
+    width: 750px;
+
+}
+  @media (min-width: @desktop) {
+    width: 1200px;
+  }
+}
