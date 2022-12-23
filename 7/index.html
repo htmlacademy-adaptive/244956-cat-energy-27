@@ -17,13 +17,16 @@
     <header class="page-header">
       <div class="page-header__logo-wrap">
       <a class="page-header__logo">
-        <img class="page-header__logo-pic" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
-        <img class="page-header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Cat Energy">
-      </a>
-      <a class="page-header__logo--tablet">
-        <img class="page-header__logo-normal" src="images/logo-tablet.png" width="100%" height="auto" alt="Логотип Cat Energy.">
-      </a>
+        <picture>
+          <source media="(min-width:1440px)" srcset="images/logo-desktopx1.png 1x, images/logo-desktopx2.png 2x" width="202" height="59">
+          <source media="(min-width:768px)" srcset="images/logo-tablet.png 1x, images/logo-tabletx2.png 2x" width="174" height="51">
+          <img class="page-header__logo-pic" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+          <img class="page-header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Cat Energy">
+        </picture>
+    </a>
+
       </div>
+
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list site-list">
@@ -49,7 +52,7 @@
          <p class="hero__slogan">Занялся собой? Займись котом!</p>
         </div>
          <picture>
-          <source media="(min-width: 768px)" srcset="images/hero-desktop.png 1x, hero-desktop2x.png 2x">
+          <source media="(min-width: 768px)" srcset="images/hero-desktop.png 1x, images/hero-desktop2x.png 2x">
           <img class="hero__hero-image" width="280" height="270"
           src="images/hero-image.png" srcset="images/hero-imagex2.png 2x"
           alt="Cat Energy Pro Курица.">
