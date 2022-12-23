@@ -37,6 +37,7 @@
     </header>
 
     <main class="catalog-page">
+      <div class="catalog-page-container">
       <h1 class="catalog-page__title">Каталог продукции</h1>
 
       <section class="catalog-page__item catalog">
@@ -44,7 +45,15 @@
         <ul class="catalog__item product-list">
           <li class="product-list__item product"><!--Первый товар-->
               <a class="product__image-link" href="#">
-                <img class="product__image" src="images/product-1.png" width="68" height="86" alt="Продукт Cat Energy">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="images/product1-desktopx1.png 1x, images/product1-desktopx2.png 2x" width="161" height="172">
+                  <source media="(min-width: 768px)" srcset="images/product1-tabletx1.png 1x, images/product1-tabletx2.png 2x" width="161" height="172">
+                  <img class="product__image"
+                  src="images/product-1.png"
+                  width="68" height="86"
+                  alt="Продукт Cat Energy"
+                  srcset="images/product1x2.png 2x">
+                </picture>
               </a>
             <div class="product__text-block">
               <h3 class="product__name"><a class="product__name-link" href="#">Cat Energy Pro 500 г</a></h3>
@@ -68,7 +77,15 @@
 
           <li class="product-list__item product"><!--Второй товар-->
               <a class="product__image-link" href="#">
-                <img class="product__image" src="images/product-2.png" width="84" height="100" alt="Еще один Продукт Cat Energy">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="images/product2-desktopx1.png 1x, images/product2-desktopx2.png 2x" width="172" height="196">
+                  <source media="(min-width: 768px)" srcset="images/product2-tabletx1.png 1x, images/product2-tabletx2.png 2x" width="168" height="206">
+                  <img class="product__image"
+                  src="images/product-2.png"
+                  width="84" height="100"
+                  alt="Еще один Продукт Cat Energy"
+                  srcset="images/product2x2.png 2x">
+                </picture>
               </a>
             <div class="product__text-block">
               <h3 class="product__name"><a class="product__name-link" href="#">Cat Energy Pro 1000 г</a></h3>
@@ -92,7 +109,15 @@
 
           <li class="product-list__item product"><!--Третий товар-->
               <a class="product__image-link" href="#">
-                <img class="product__image" src="images/product-3.png" width="68" height="78" alt="Продукт Cat Energy с рыбой">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="images/product3-desktopx1.png 1x, images/product3-desktopx2.png 2x" width="161" height="172">
+                  <source media="(min-width: 768px)" srcset="images/product3-tabletx1.png 1x, images/product3-tabletx2.png 2x" width="161" height="172">
+                  <img class="product__image"
+                  src="images/product-3.png"
+                  width="68" height="78"
+                  alt="Продукт Cat Energy с рыбой"
+                  srcset="images/product3x2.png 2x">
+                </picture>
               </a>
             <div class="product__text-block">
               <h3 class="product__name"><a class="product__name-link" href="#">Cat Energy Pro 500 г</a></h3>
@@ -116,7 +141,15 @@
 
           <li class="product-list__item product"><!--Четвертый товар-->
               <a class="product__image-link" href="#">
-                <img class="product__image" src="images/product-4.png" width="84" height="100" alt="Продукт Cat Energy с рыбой большой">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="images/product4-desktopx1.png 1x, images/product4-desktopx2.png 2x" width="172" height="196">
+                  <source media="(min-width: 768px)" srcset="images/product4-tabletx1.png 1x, images/product4-tabletx2.png 2x" width="168" height="206">
+                  <img class="product__image"
+                  src="images/product-4.png"
+                  width="84" height="100"
+                  alt="Продукт Cat Energy с рыбой большой"
+                  srcset="images/product4x2.png 2x">
+                </picture>
               </a>
             <div class="product__text-block">
               <h3 class="product__name"><a class="product__name-link" href="#">Cat Energy Pro 1000 г</a></h3>
@@ -140,7 +173,15 @@
 
           <li class="product-list__item product"><!--Пятый товар-->
               <a class="product__image-link" href="#">
-                <img class="product__image" src="images/product-5.png" width="68" height="78" alt="Продукт Cat Energy с гречкой">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="images/product5-desktopx1.png 1x, images/product5-desktopx2.png 2x" width="161" height="172">
+                  <source media="(min-width: 768px)" srcset="images/product5-tabletx1.png 1x, images/product5-tabletx2.png 2x" width="161" height="172">
+                  <img class="product__image"
+                  src="images/product-5.png"
+                  width="68" height="78"
+                  alt="Продукт Cat Energy с гречкой"
+                  srcset="images/product5x2.png 2x">
+                </picture>
               </a>
             <div class="product__text-block">
               <h3 class="product__name"><a class="product__name-link" href="#">Cat Energy Slim 500 г</a></h3>
@@ -164,7 +205,15 @@
 
           <li class="product-list__item product"><!--Шестой товар-->
               <a class="product__image-link" href="#">
-                <img class="product__image" src="images/product-6.png" width="84" height="100" alt="Большой Cat Energy с гречкой">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="images/product6-desktopx1.png 1x, images/product6-desktopx2.png 2x" width="172" height="196">
+                  <source media="(min-width: 768px)" srcset="images/product6-tabletx1.png 1x, images/product6-tabletx2.png 2x" width="168" height="206">
+                  <img class="product__image"
+                  src="images/product-6.png"
+                  width="84" height="100"
+                  alt="Большой Cat Energy с гречкой"
+                  srcset="images/product6x2.png 2x">
+                </picture>
               </a>
             <div class="product__text-block">
               <h3 class="product__name"><a class="product__name-link" href="#">Cat Energy Slim 1000 г</a></h3>
@@ -188,7 +237,15 @@
 
           <li class="product-list__item product"><!--Седьмой товар-->
               <a class="product__image-link" href="#">
-                <img class="product__image" src="images/product-7.png" width="72" height="84" alt="Продукт Cat Energy с рисом">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="images/product7-desktopx1.png 1x, images/product7-desktopx2.png 2x" width="161" height="172">
+                  <source media="(min-width: 768px)" srcset="images/product7-tabletx1.png 1x, images/product7-tabletx2.png 2x" width="161" height="172">
+                  <img class="product__image"
+                  src="images/product-7.png"
+                  width="72" height="84"
+                  alt="Продукт Cat Energy с рисом"
+                  srcset="images/product7x2.png 2x">
+                </picture>
               </a>
             <div class="product__text-block">
               <h3 class="product__name"><a class="product__name-link" href="#">Cat Energy Slim 500 г</a></h3>
@@ -263,7 +320,7 @@
 
       </section>
 
-
+      </div>
     </main>
 
     <footer class="page-footer">

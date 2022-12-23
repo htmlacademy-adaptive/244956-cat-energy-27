@@ -1,29 +1,30 @@
 .main-form-page {
+  margin: 0 auto;
+  background-color: @white;
+}
+
+.form-page-container {
+  width: 320px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  width: 330px;
-  margin: 0 auto;
   padding: @padding-mobile;
-  background-color: @white;
 
   @media (min-width: @tablet) {
     width: 768px;
-    padding: 0 60px;
+    padding: @padding-tablet;
   };
 
   @media (min-width: @desktop) {
-    max-width: 1500px;
-    padding: @padding-desktop;
-    margin: 0 auto;
-    min-width: 1200px;
-  }
+    width: 1440px;
+   }
 }
-
 
 .main-form-page__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+
 
   @media (min-width: @tablet) {
     font-size: 60px;
@@ -37,7 +38,8 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  width: 350px;
+
+
 
   @media (min-width: @tablet) {
     font-size: 20px;

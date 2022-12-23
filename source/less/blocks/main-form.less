@@ -1,6 +1,7 @@
 .main-form {
   display: grid;
-  grid-template-columns: 300px;
+  z-index: 0;
+  grid-template-columns: 280px;
   grid-template-rows: auto(6, repeat);
   grid-template-areas:
       "cat"
@@ -12,7 +13,7 @@
 
 
   @media (min-width: @tablet) {
-    grid-template-columns: 700px;
+    grid-template-columns: 708px;
     grid-template-rows: auto(6, repeat);
   };
 
@@ -65,6 +66,10 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+  box-sizing: border-box;
+  width: fit-content;
+  background-color: @white;
+  padding-right: 2px;
 
   @media (min-width: @tablet) {
     font-size: 36px;
@@ -72,4 +77,25 @@
   }
 }
 
+.owner-info__title::before,
+.comments-field__title::before,
+.additional-checkbox__title::before {
+  position: absolute;
+  content: "";
+  width: 205px;
+  height: 2px;
+  background-color: @main-color;
+  left: 91px;
+  top: 16px;
+  z-index: -1;
 
+  @media (min-width: @tablet) {
+    top: 23px;
+    left: -34px;
+    width: 750px;
+
+}
+  @media (min-width: @desktop) {
+    width: 1200px;
+  }
+}
