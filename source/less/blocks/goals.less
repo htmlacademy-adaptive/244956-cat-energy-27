@@ -50,47 +50,48 @@ width: 768px;
   padding-right: 33px;
 
   background-repeat: no-repeat;
-  background-position: 20px 30px;
-
 
   @media (min-width: @tablet) {
     padding-left: 50px;
-    background-position: 95% center;
   }
 
   @media (min-width: @desktop) {
     background-position: 50px 30px;
-
   }
 
   &--loseweight {
-  background-image: url(../../images/cat_back.png);
-  background-size: 50px 53px;
+    background-image: url(../../images/cat_back.svg);
+    background-size: 50px 50px;
+    background-position: 28px 30px;
 
   @media (min-width: @tablet) {
     background-size: 200px 200px;
-    background-image: url(../../images/cat-black-tablet.png);
+    background-position: 87% 50%;
+  }
 
   @media (min-width: @desktop) {
-    background-size: 106px 100px;
+    background-size: 105px 105px;
+    background-position: 20px 20px;
   }
   }
-};
 
   &--gainweight {
-    background-image: url(../../images/panther-black.png);
+    background-image: url(../../images/panther_back.svg);
     background-size: 67px 53px;
+    background-position: 14px 30px;
 
     @media (min-width: @tablet) {
       background-size: 268px 200px;
-      background-image: url(../../images/panther-black-tablet.png);
+      background-position: 93% 50%;
     };
 
     @media (min-width: @desktop) {
       background-size: 134px 100px;
+      background-position: 20px 20px;
     }
   };
 }
+
 
 .goal__header {
   height: 54px;
