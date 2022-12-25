@@ -74,25 +74,25 @@
 
 .explanation__item--functional {
   @media (min-width: @tablet) {
-    background-image: url(../../images/1.png);
+    background-image: url(../../images/1.svg);
   }
 }
 
 .explanation__item--potion {
   @media (min-width: @tablet) {
-    background-image: url(../../images/2.png);
+    background-image: url(../../images/2.svg);
   }
 }
 
 .explanation__item--substitute {
   @media (min-width: @tablet) {
-    background-image: url(../../images/3.png);
+    background-image: url(../../images/3.svg);
   }
 }
 
 .explanation__item--month {
   @media (min-width: @tablet) {
-    background-image: url(../../images/4.png);
+    background-image: url(../../images/4.svg);
   }
 }
 
@@ -100,26 +100,31 @@
   background-color: @main-color;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 60px 60px;
+
+  @media (min-width: @tablet) {
+    background-size: 80px 80px;
+  }
 }
 
 .explanation__item--functional .explanation__deco {
-  background-image: url(../../images/icon-leaf.png);
-  background-size: 25px 28px;
+  background-image: url(../../images/icon-leaf.svg);
+
 }
 
 .explanation__item--potion .explanation__deco {
-  background-image: url(../../images/icon-potion.png);
-  background-size: 25px 28px;
+  background-image: url(../../images/icon-potion.svg);
+
 }
 
 .explanation__item--substitute .explanation__deco {
-  background-image: url(../../images/icon_eat.png);
-  background-size: 25px 28px;
+  background-image: url(../../images/icon-eat.svg);
+
 }
 
 .explanation__item--month .explanation__deco {
-  background-image: url(../../images/icon-clock.png);
-  background-size: 25px 28px;
+  background-image: url(../../images/icon-clock.svg);
+
 }
 
 .explanation__text {
