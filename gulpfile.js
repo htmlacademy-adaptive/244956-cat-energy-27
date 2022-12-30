@@ -8,7 +8,7 @@ import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
-//import del from 'del';
+import del from 'del';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
@@ -68,12 +68,12 @@ const createWebp = () => {
   // SVG
 
 const svg = () =>
-gulp.src(['source/images/*.svg', '!source/images/favicons/*.svg', '!source/images/sprite.svg'])
+gulp.src(['source/images/**/*.svg', '!source/images/favicons/*.svg', '!source/images/sprite.svg'])
 .pipe(svgo())
 .pipe(gulp.dest('build/images'));
 
 const sprite = () => {
-return gulp.src(['source/images/*.svg', '!source/images/sprite.svg'])
+return gulp.src(['source/images/svg/*.svg'])
 .pipe(svgo())
 .pipe(svgstore({
 inlineSvg: true
@@ -86,7 +86,7 @@ inlineSvg: true
 
 const copy = (done) => {
   gulp.src([
-  'source/fonts/*.{woff2,woff}',
+  'source/fonts/**/*.{woff2,woff}',
   'source/*.ico',
   ], {
   base: 'source'
@@ -97,9 +97,9 @@ const copy = (done) => {
 
 // Clean
 
-//const clean = () => {
-  //return del("build");
-//  };
+const clean = () => {
+return del("build");
+ };
 
 // Server
 const server = (done) => {
@@ -132,7 +132,7 @@ gulp.watch('source/*.html', gulp.series(html, reload));
 // Build
 
 export const build = gulp.series(
-  //clean,
+  clean,
   copy,
   optimizeImages,
   gulp.parallel(
@@ -148,7 +148,7 @@ export const build = gulp.series(
   // Default
 
 export default gulp.series(
-  //clean,
+  clean,
   copy,
   copyImages,
   gulp.parallel(

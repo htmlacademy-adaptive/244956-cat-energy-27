@@ -205,7 +205,7 @@
 .example__second-slide {
     position: absolute;
     height: 256px;
-    background-image: url("../../images/curtain.svg"), url(../../images/before@1x.png);
+    background-image: url("../../images/svg/curtain.svg"), url(../../images/before@1x.png);
     background-repeat: no-repeat, no-repeat;
     background-size: 50px 256px, 280px 256px;
     background-position: 107% 50%, 50% 50%;
@@ -217,24 +217,24 @@
     z-index: 2;
 
     &:hover {
-      background-image: url("../../images/curtaingreen.svg"), url(../../images/before@1x.png);
+      background-image: url("../../images/svg/curtaingreen.svg"), url(../../images/before@1x.png);
     }
 
     &:active {
-      background-image: url("../../images/curtain-active.svg"), url(../../images/before@1x.png);
+      background-image: url("../../images/svg/curtain-active.svg"), url(../../images/before@1x.png);
     }
     @media (min-resolution: 2dppx) {
-      background-image: url("../../images/curtain.svg"), url(../../images/before@2x.png);
+      background-image: url("../../images/svg/curtain.svg"), url(../../images/before@2x.png);
     };
     @media (min-width: @tablet) {
-      background-image: url("../../images/curtain.svg"), url(../../images/tabletbefore@1x.png);
+      background-image: url("../../images/svg/curtain.svg"), url(../../images/tabletbefore@1x.png);
       height: 512px;
       width: 60%;max-width: 100%;
       background-size: 70px 580px, 560px 512px;
       background-position: 100% 50%, 50% 50%;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../images/curtain.svg"), url(../../images/tabletbefore@2x.png);
+        background-image: url("../../images/svg/curtain.svg"), url(../../images/tabletbefore@2x.png);
       }
     }
   }

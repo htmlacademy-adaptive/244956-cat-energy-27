@@ -22,15 +22,19 @@
 }
 
 .promo::before {
-  @media (min-width: @tablet) {
     position: absolute;
     content: "";
-    width: 80px;
-    height: 80px;
-    background-image: url(../../images/icon_gift.svg);
+    background-image: url(../../images/svg/icon_gift.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    width: 80px;
+    height: 80px;
+    top: 22%;
+    left: 100px;
+
+
+  @media (min-width: @tablet) {
     top: 38%;
     left: 77px;
   }
