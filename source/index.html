@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" href="images/favicons/apple-icon-180x180.png"> <!-- 180×180 -->
     <link rel="icon" href="favicon.ico"><!-- 32×32 -->
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
   </head>
 
   <body class="page-body">
@@ -19,8 +19,8 @@
         <picture>
           <source media="(min-width:1440px)" srcset="images/logo-desktopx1.png 1x, images/logo-desktopx2.png 2x" width="202" height="59">
           <source media="(min-width:768px)" srcset="images/logo-tablet.png 1x, images/logo-tabletx2.png 2x" width="174" height="51">
-          <img class="page-header__logo-pic" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
-          <img class="page-header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Cat Energy">
+          <img class="page-header__logo-pic" src="images/svg/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+          <img class="page-header__logo-text" src="images/svg/logo-text.svg" width="101" height="18" alt="Cat Energy">
         </picture>
     </a>
 
@@ -52,7 +52,7 @@
         </div>
          <picture>
           <source type="image/webp" media="(min-width: 768px)" srcset="images/hero-desktop.webp 1x, images/hero-desktop2x.webp 2x">
-          <source type="image/webp" srcset="images/hero-image.webp 1x, images/hero-imagex2 2x">
+          <source type="image/webp" srcset="images/hero-image.webp 1x, images/hero-imagex2.webp 2x">
           <source media="(min-width: 768px)" srcset="images/hero-desktop.png 1x, images/hero-desktop2x.png 2x">
           <img class="hero__hero-image" width="280" height="270"
           src="images/hero-image.png" srcset="images/hero-imagex2.png 2x"
@@ -171,8 +171,9 @@
         <div class="page-footer__item footer-logo">
           <a class="footer-logo__link" href="#">
           <svg class="footer-logo__image" width="128" height="24" alt="Логотип Cat Energy">
-            <use xlink:href="images/sprite.svg#footer-logo"></use>
+            <use xlink:href="images/sprite.svg#logo-text"></use>
           </svg>
+
         </a>
         </div>
         <div class="page-footer__item social">
@@ -181,7 +182,7 @@
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Мы в Вконтакте.</span>
                 <svg class="social__picture" width="27" height="17" fill="#666666">
-                  <use xlink:href="images/sprite.svg#vkontakte"></use>
+                  <use xlink:href="images/sprite.svg#vk"></use>
                   </svg>
               </a>
             </li>
@@ -197,7 +198,7 @@
               <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Мы в telegram.</span>
                 <svg class="social__picture" width="20" height="18" fill="#666666">
-                  <use xlink:href="images/sprite.svg#telegram"></use>
+                  <use xlink:href="images/sprite.svg#tg"></use>
                 </svg>
               </a>
             </li>
@@ -207,13 +208,13 @@
           <a class="copyright__link" href="https://htmlacademy.ru">
             <span class="copyright__text">HTML Academy</span>
             <svg class="copyright__picture" width="27" height="34" fill="#666666">
-              <use xlink:href="images/sprite.svg#htmlacademy-footer"></use>
+              <use xlink:href="images/sprite.svg#html-academy"></use>
             </svg>
           </a>
         </div>
       </div></div></div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
