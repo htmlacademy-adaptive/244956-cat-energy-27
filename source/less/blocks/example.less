@@ -1,5 +1,6 @@
 .example {
-  background-color: #EAEAEA; /*Градиент - добавить*/
+  background-color: #EAEAEA;
+
 
   @media (min-width: @tablet) {
     background-color: @white;
@@ -51,6 +52,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  margin-bottom: 28px;
 
   @media (min-width: @tablet) {
     font-size: 60px;
@@ -60,7 +62,7 @@
 
 .example__text {
   .lato;
-  width: 276px;
+  width: 278px;
   margin-bottom: 34px;
 
   @media (min-width: @tablet) {
@@ -77,25 +79,30 @@
   .list-style;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 50px;
+  position: relative;
+  margin-bottom: 20px;
 
 
 }
 .stats-list__item {
+  width: 124px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 30px;
+  position: relative;
+
 
   &::before {
     position: absolute;
     content: "";
-    background-image: url(../../images/weight-back.png);
+    width: 128px;
+    height: 58px;
+    background-image: url(../../images/svg/weight-back.svg);
     background-repeat: no-repeat;
     background-position: center;
     left: 0;
-    top: 0;
+    top: -16px;
+    z-index: 2;
   }
 
   @media (min-width: @desktop) {
@@ -108,7 +115,9 @@
   font-size: 24px;
   line-height: 24px;
   position: relative;
-  margin-bottom: 8px;
+  margin-bottom: 9px;
+
+  text-transform: uppercase;
 
   @media (min-width: @tablet) {
     font-size: 30px;
@@ -119,10 +128,11 @@
 .stats-list__description {
   .lato;
   font-size: 12px;
-  margin: 0;
   width: 75px;
-  text-align: center;
   line-height: 12px;
+
+  margin-left: 0;
+  text-align: center;
 }
 
 .example__info {
@@ -130,9 +140,9 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-  width: 232px;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+
 
 
   @media (min-width: @tablet) {
@@ -156,10 +166,19 @@
 }
 }
 
+.example__info-definition {
+  margin-inline-start: 0;
+}
+
+.example__info-term {
+  margin-right: 5px;
+}
+
 .example__compare-slider {
   position: relative;
   line-height: 0;
   padding: @padding-mobile;
+  margin-bottom: 28px;
 
   @media (min-width: @tablet) {
     margin: 0 auto;
@@ -180,8 +199,8 @@
   background-image: url(../../images/after@1x.png);
   background-repeat: no-repeat;
   width: 280px;
-  height: 256px;
-  background-size: 100%;
+  height: 290px;
+  background-size: 110%;
   padding: 0;
   margin: 0;
 
@@ -204,10 +223,10 @@
 
 .example__second-slide {
     position: absolute;
-    height: 256px;
+    height: 290px;
     background-image: url("../../images/svg/curtain.svg"), url(../../images/before@1x.png);
     background-repeat: no-repeat, no-repeat;
-    background-size: 50px 256px, 280px 256px;
+    background-size: 50px 256px, 280px 270px;
     background-position: 107% 50%, 50% 50%;
     width: 60%;
     max-width: 100%;
