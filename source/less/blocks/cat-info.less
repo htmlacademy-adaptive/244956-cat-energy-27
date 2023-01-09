@@ -1,5 +1,6 @@
 .main-form .cat-info {
     position: relative;
+    padding-top: 8px;
 
     @media (min-width: @desktop) {
     padding-top: 40px;
@@ -13,15 +14,25 @@
     height: 1px;
     background-color: #D9D9D9;
     left: -20px;
-    bottom: 20px;
+    bottom: -2px;
 
     @media (min-width: @tablet) {
         display: none;
     }
 }
 
+.cat-info__item--name {
+  margin-bottom: 10px;
+}
+
+.cat-info__item--weight {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
 .cat-info__item--age {
-    margin-bottom: 50px;
+  margin-top: 0;
+  margin-bottom: 22px;
 
     @media (min-width: @tablet) {
         margin-bottom: 72px;
@@ -29,7 +40,7 @@
 }
 
 .cat-info__input-name {
-    width: 175px;
+    width: 183px;
 
     @media (min-width: @tablet) {
         width: 594px;
@@ -41,7 +52,8 @@
 }
 
 .cat-info__input-weight {
-    width: 157px;
+    width: 161px;
+    margin-top: 0;
 
     @media (min-width: @tablet) {
         width: 568px;
@@ -53,7 +65,7 @@
 }
 
 .cat-info__input-age {
-    width: 124px;
+    width: 128px;
 
     @media (min-width: @tablet) {
         width: 527px;
