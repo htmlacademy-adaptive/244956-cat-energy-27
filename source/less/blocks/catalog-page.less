@@ -1,7 +1,5 @@
 .catalog-page {
   margin: 0 auto;
-
-
 }
 
 .catalog-page-container {
@@ -25,16 +23,19 @@
   display: grid;
   grid-template-columns: 280px;
 
-
-
   @media (min-width: @tablet) {
     grid-template-columns: 708px;
-      }
+    padding-left: 10px;
+    padding-top: 5px;
+  }
 
   @media (min-width: @desktop) {
     grid-template-columns: 895px 325px;
     grid-column-gap: 80px;
     margin: 0 auto;
+    padding-left: 91px;
+    padding-top: 3px;
+    box-sizing: border-box;
   }
 }
 
@@ -52,11 +53,13 @@
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 160px;
-}
+    margin-left: 9px;
+  }
 
   @media (min-width: @desktop) {
-    margin-left: 100px;
+    margin-left: 91px;
     width: 800px;
+    margin-top: -46px;
   }
 }
 
@@ -71,7 +74,7 @@
   @media (min-width: @desktop) {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-}
+  }
 }
 
 .promo {

@@ -1,7 +1,5 @@
 .hero {
   position: relative;
-  margin-bottom: 20px;
-
 }
 
 .hero__wrapper {
@@ -24,6 +22,7 @@
   @media (min-width: @tablet) {
     background-image: none;
     background-color: @white;
+    margin-bottom: 38px;
   }
 }
 
@@ -42,7 +41,7 @@
     position: absolute;
     width: 720px;
     height: 694px;
-    top: -218px;
+    top: -207px;
     left: calc(50%);
     background-repeat: no-repeat, no-repeat;
     background-image: linear-gradient(180deg,rgba(104, 183, 56, 0.9),
@@ -57,7 +56,7 @@
       background-image: linear-gradient(180deg,rgba(104, 183, 56, 0.9),
                 rgba(104, 183, 56, 0.9)), url("../../images/hero-background-desktop2x.png");
     }
-}
+  }
 }
 
 .page-title {
@@ -84,16 +83,16 @@
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 40px;
-  };
+  }
 
   @media (min-width: @desktop) {
-    padding-left: 160px;
+    padding-left: 190px;
     z-index: 2;
-
+    margin-top: -11px;
   }
 }
 
- .hero__slogan {
+.hero__slogan {
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
@@ -108,11 +107,11 @@
     color: #111111;
     margin-bottom: 400px;
     text-align: left;
-    };
+    }
 
   @media (min-width: @desktop) {
     margin-bottom: 182px;
-    padding-left: 160px;
+    padding-left: 190px;
   }
 }
 
@@ -122,18 +121,19 @@
   left: calc(50% - 140px);
 
   @media (min-width: @tablet) {
-    width: 709px;
-    height: 609px;
-    top: 250px;
-    left: 90px;
-  };
-
-  @media (min-width: @desktop) {
-    left: 464px;
-    top: 50px;
-    z-index: 3;
+    width: 690px;
+    height: 615px;
+    top: 225px;
+    left: 57px;
   }
 
+  @media (min-width: @desktop) {
+    left: 555px;
+    top: -67px;
+    z-index: 3;
+    width: 555px;
+    height: 499px;
+  }
 }
 
 .hero__button {
@@ -145,20 +145,20 @@
   box-sizing: border-box;
   padding-left: 76px;
 
-
   @media (min-width: @tablet) {
     position: absolute;
-    top: 244px;
-    left: 117px;
+    top: 256px;
+    left: 120px;
     width: 245px;
     height: 54px;
     font-size: 20px;
     line-height: 20px;
-    padding: 14px 26px;
+    padding: 17px 26px;
     box-sizing: border-box;
-  };
+  }
 
   @media (min-width: @desktop) {
-    left: 160px;
+    left: 190px;
+    top: 248px;
   }
 }

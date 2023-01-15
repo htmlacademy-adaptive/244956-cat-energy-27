@@ -1,8 +1,13 @@
 .page-footer {
   background-color: @white;
+
+  @media (min-width: @desktop) {
+    background-color: #f2f2f2;
+  }
 }
 
-.catalog-page + .page-footer {
+.catalog-page + .page-footer,
+.main-form-page + .page-footer {
   background-color: #f2f2f2;
 }
 
@@ -13,8 +18,9 @@
   padding-top: 26px;
 
   @media (min-width: @tablet) {
-  width: 768px;
-}
+    width: 768px;
+    padding-top: 0;
+  }
 
   @media (min-width: @desktop) {
     width: 1440px;
@@ -23,14 +29,12 @@
 
 .footer-container {
   padding: @padding-mobile;
-
   box-sizing: border-box;
   margin-bottom: 26px;
 
-
   @media (min-width: @tablet) {
-  padding: @padding-tablet;
-  margin-top: 60px;
+    padding: 0 69px;
+    margin-top: 60px;
   }
 
   @media (min-width: @desktop) {
@@ -39,8 +43,8 @@
     width: 565px;
     height: 200px;
     background: @white;
-    top: 100px;
-    left: 100px;
+    top: 95px;
+    left: 110px;
     z-index: 2;
   }
 }
@@ -49,19 +53,18 @@
   display: flex;
   justify-content: space-between;
 
- @media (min-width: @desktop) {
-    padding-top: 40px;
+  @media (min-width: @desktop) {
+    padding-top: 59px;
+    margin-left: 9px;
   }
 }
-
-
 
 .footer-contacts__invitation {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  width: 153px;
+  width: 156px;
   margin: 0;
 
   @media (min-width: @tablet) {
@@ -82,19 +85,18 @@
     line-height: 20px;
     text-align: right;
     width: 160px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: @desktop) {
-    width: 155px;
+    width: 126px;
+    text-align: left;
+    padding-right: 44px;
   }
 }
 
 .footer-contacts__address-item {
   margin: 0;
-
-  @media (min-width: @tablet) {
-    margin-bottom: 15px;
-  }
 }
 
 .footer-contacts__map {
@@ -106,37 +108,46 @@
   @media (min-width: @tablet) {
     width: 768px;
     height: 400px;
-};
+  }
 
   @media (min-width: @desktop) {
     width: 1440px;
     height: 400px;
-};
+  }
 
-&::before {
-  position:absolute;
-  content:"";
-  width: 57px;
-  height: 53px;
-  z-index: 3;
-  background-image: url(../../images/map-pin.png.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  top: calc(50% - 40px);
-  left: calc(50% - 40px);
+  &::before {
+    position: absolute;
+    content: "";
+    width: 57px;
+    height: 53px;
+    z-index: 3;
+    background-image: url(../../images/map-pin.png.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
+
+    @media (min-width: @tablet) {
+      width: 113px;
+      height: 106px;
+    }
+
+    @media (min-width: @desktop) {
+      top: calc(50% - 40px);
+      left: 723px;
+    }
+  }
+}
+
+.footer-contacts__map iframe {
 
   @media (min-width: @tablet) {
-    width: 113px;
-    height: 106px;
+    width: 768px;
+    height: 400px;
   }
 
   @media (min-width: @desktop) {
-    top: calc(50% - 40px);
-    left: 723px;
+    width: 1440px;
+    height: 400px;
   }
 }
-}
-
-
-
-
