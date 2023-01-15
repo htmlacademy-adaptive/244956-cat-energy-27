@@ -1,6 +1,10 @@
 
 .additions {
   margin-bottom: 3px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 38px;
+  }
 }
 
 .additions__title {
@@ -8,12 +12,41 @@
   font-size: 24px;
   line-height: 24px;
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 80px;
 
   @media (min-width: @tablet) {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 80px;
+    margin-left: 6px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+    background-color: @white;
+    width: 350px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 2px;
+      background-color: @main-color;
+      z-index: -1;
+      top: 23px;
+      left: -30px;
+      width: 757px;
+    }
   }
 
+  @media (min-width: @desktop) {
+    margin-top: 38px;
+    margin-left: -40px;
+    padding-left: 40px;
+    padding-right: 22px;
+    margin-bottom: 80px;
+
+    &::before {
+      width: 1433px;
+      left: -64px;
+    }
+  }
 }

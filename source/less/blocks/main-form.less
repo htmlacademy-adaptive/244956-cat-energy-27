@@ -4,22 +4,22 @@
   grid-template-columns: 280px;
   grid-template-rows: auto(6, repeat);
   grid-template-areas:
-      "cat"
-      "goals"
-      "owner"
-      "comments"
-      "add"
-      "button";
+    "cat"
+    "goals"
+    "owner"
+    "comments"
+    "add"
+    "button";
   margin-bottom: 16px;
 
 
   @media (min-width: @tablet) {
     grid-template-columns: 708px;
     grid-template-rows: auto(6, repeat);
-  };
+  }
 
   @media (min-width: @desktop) {
-    grid-template-columns: 600px 600px;
+    grid-template-columns: 620px 620px;
     grid-template-areas:
       "cat goals"
       "owner owner"
@@ -92,11 +92,12 @@
 
   @media (min-width: @tablet) {
     top: 23px;
-    left: -34px;
-    width: 750px;
+    left: -26px;
+    width: 754px;
+  }
 
-}
   @media (min-width: @desktop) {
-    width: 1200px;
+    width: 1427px;
+    left: -64px;
   }
 }

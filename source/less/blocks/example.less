@@ -1,15 +1,17 @@
 .example {
   background-color: #EAEAEA;
 
-
   @media (min-width: @tablet) {
     background-color: @white;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop) {
-    background-image: linear-gradient(to bottom, #ffffff 21%, #EAEAEA 21%);
+    background-image: linear-gradient(to bottom, #ffffff 27%, #f2f2f2 27%);
+    margin-bottom: -15px;
   }
 }
+
 
 .example__wrapper {
   width: 320px;
@@ -26,8 +28,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;
-
-      }
+  }
 }
 
 .example__container {
@@ -36,15 +37,15 @@
   flex-direction: column;
 
   @media (min-width: @tablet) {
-    padding: @padding-desktop;
+    padding: @padding-tablet;
     flex-direction: row;
     flex-wrap: wrap;
-  };
+    margin-bottom: 50px;
+  }
 
   @media (min-width: @desktop) {
     width: 500px;
     flex-direction: column;
-
   }
 }
 
@@ -57,6 +58,13 @@
   @media (min-width: @tablet) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-top: 32px;
+    margin-left: 81px;
+    margin-bottom: 128px;
   }
 }
 
@@ -66,12 +74,16 @@
   margin-bottom: 34px;
 
   @media (min-width: @tablet) {
-    width: 700px;
+    width: 706px;
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 69px;
   }
+
   @media (min-width: @desktop) {
-    width: 440px;
+    width: 433px;
+    margin-left: 81px;
+    margin-bottom: 83px;
   }
 }
 
@@ -82,8 +94,13 @@
   position: relative;
   margin-bottom: 20px;
 
-
+  @media (min-width: @desktop) {
+    padding-left: 80px;
+    width: 368px;
+    margin: 0;
+  }
 }
+
 .stats-list__item {
   width: 124px;
   display: flex;
@@ -91,6 +108,10 @@
   align-items: center;
   position: relative;
 
+  @media (min-width: @tablet) {
+    width: 165px;
+    margin-right: 40px;
+  }
 
   &::before {
     position: absolute;
@@ -103,10 +124,18 @@
     left: 0;
     top: -16px;
     z-index: 2;
+
+    @media (min-width: @tablet) {
+      width: 165px;
+      height: 84px;
+      background-size: 100%;
+      top: -20px;
+    }
   }
 
   @media (min-width: @desktop) {
-    margin-right: 130px;
+    margin-right: 0;
+    margin-bottom: 52px;
   }
 }
 
@@ -116,12 +145,15 @@
   line-height: 24px;
   position: relative;
   margin-bottom: 9px;
-
   text-transform: uppercase;
 
   @media (min-width: @tablet) {
     font-size: 30px;
     line-height: 37px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 12px;
   }
 }
 
@@ -130,9 +162,18 @@
   font-size: 12px;
   width: 75px;
   line-height: 12px;
-
   margin-left: 0;
   text-align: center;
+
+  @media (min-width: @tablet) {
+    width: 108px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 133px;
+  }
 }
 
 .example__info {
@@ -142,28 +183,26 @@
   text-transform: uppercase;
   margin: 0 auto;
   display: flex;
-
-
+  margin-bottom: 30px;
 
   @media (min-width: @tablet) {
     flex-direction: column;
     justify-content: left;
     font-size: 20px;
-    margin-left: 235px;
-
+    line-height: 20px;
+    margin-left: 90px;
+    margin-top: 3px;
     width: 180px;
-    margin-top: 0;
     text-align: right;
-
   }
+
   @media (min-width: @desktop) {
     width: 320px;
-    margin-left: 0;
-
+    margin-left: 82px;
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
-}
+  }
 }
 
 .example__info-definition {
@@ -174,17 +213,17 @@
   margin-right: 5px;
 }
 
-.example__compare-slider {
+.example__slider {
   position: relative;
-  line-height: 0;
+
   padding: @padding-mobile;
   margin-bottom: 28px;
 
   @media (min-width: @tablet) {
     margin: 0 auto;
-    width: 560px;
-    height: 512px;
-    background-image: linear-gradient(to bottom, #ffffff 21%, #EAEAEA 21%)
+    width: 100%;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom, #ffffff 26%, #EAEAEA 26%);
   }
 
   @media (min-width: @desktop) {
@@ -193,16 +232,50 @@
   }
 }
 
+.example__slider::before {
+  content: "";
+  position: absolute;
+  z-index: 4;
+  width: 41px;
+  height: 261px;
+  top: 0;
+  left: 140px;
+  background-image: url("../../images/svg/curtain.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  @media (min-width: @tablet) {
+    height: 533px;
+    top: -7px;
+    left: 380px;
+  }
+
+  @media (min-width: @desktop) {
+    left: 416px;
+  }
+}
+
+.example__slider::before:hover {
+  background-image: url("../../images/svg/curtaingreen.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.example__slider::before:active {
+    background-image: url("../../images/svg/curtain-active.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
 .example__image {
   z-index: 0;
   position: relative;
   background-image: url(../../images/after@1x.png);
   background-repeat: no-repeat;
   width: 280px;
-  height: 290px;
-  background-size: 110%;
+  height: 256px;
+  background-size: 100%;
   padding: 0;
-  margin: 0;
 
   @media (min-resolution: 2dppx) {
     background-image: url(../../images/after@2x.png);
@@ -212,48 +285,54 @@
     background-image: url(../../images/tabletafter@1x.png);
     width: 560px;
     height: 512px;
+    margin: 0 auto;
+    margin-bottom: 115px;
 
     @media (min-resolution: 2dppx) {
       background-image: url(../../images/tabletafter@2x.png);
     }
   }
-
-
 }
 
 .example__second-slide {
-    position: absolute;
-    height: 290px;
-    background-image: url("../../images/svg/curtain.svg"), url(../../images/before@1x.png);
-    background-repeat: no-repeat, no-repeat;
-    background-size: 50px 256px, 280px 270px;
-    background-position: 107% 50%, 50% 50%;
-    width: 60%;
+  position: absolute;
+  height: 284px;
+  width: 50%;
+  max-width: 100%;
+  background-color: #EAEAEA;
+  background-image: url(../../images/before@1x.png);
+  background-repeat: no-repeat;
+  background-size: 280px 245px;
+  background-position: 0% 23%;
+  overflow: hidden;
+  resize: horizontal;
+  top: 0;
+  z-index: 2;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../../images/before@2x.png);
+  }
+
+  @media (min-width: @tablet) {
+    background-image: url(../../images/tabletbefore@1x.png),
+    linear-gradient(to bottom, #ffffff 32%, #EAEAEA 26%);
+    height: 512px;
+    width: 50%;
     max-width: 100%;
-    overflow: hidden;
-    resize: horizontal;
-    top: 0;
-    z-index: 2;
+    background-size: 560px 512px, 100%;
+    background-position: 0% 23%, center;
 
-    &:hover {
-      background-image: url("../../images/svg/curtaingreen.svg"), url(../../images/before@1x.png);
-    }
-
-    &:active {
-      background-image: url("../../images/svg/curtain-active.svg"), url(../../images/before@1x.png);
-    }
     @media (min-resolution: 2dppx) {
-      background-image: url("../../images/svg/curtain.svg"), url(../../images/before@2x.png);
-    };
-    @media (min-width: @tablet) {
-      background-image: url("../../images/svg/curtain.svg"), url(../../images/tabletbefore@1x.png);
-      height: 512px;
-      width: 60%;max-width: 100%;
-      background-size: 70px 580px, 560px 512px;
-      background-position: 100% 50%, 50% 50%;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../images/svg/curtain.svg"), url(../../images/tabletbefore@2x.png);
+      background-image:url(../../images/tabletbefore@2x.png), linear-gradient(to bottom, #ffffff 32%, #EAEAEA 26%);
       }
     }
-  }
+
+    @media (min-width: @desktop) {
+      background-image: url(../../images/tabletbefore@1x.png),
+      linear-gradient(to bottom, #ffffff 33%, #f2f2f2 26%);
+
+      @media (min-resolution: 2dppx) {
+        background-image:url(../../images/tabletbefore@2x.png), linear-gradient(to bottom, #ffffff 33%, #f2f2f2 26%);
+      }
+    }
+}

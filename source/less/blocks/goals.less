@@ -1,14 +1,16 @@
 .goals {
-margin: 0 auto;
-width: 320px;
+  margin: 0 auto;
+  width: 320px;
 
-@media (min-width: @tablet) {
-width: 768px;
-};
+  @media (min-width: @tablet) {
+    width: 768px;
+    margin-bottom: 45px;
+  }
 
-@media (min-width: @desktop) {
-  width: 1440px;
-}
+  @media (min-width: @desktop) {
+    width: 1440px;
+    margin-bottom: 74px;
+  }
 }
 
 .goals__container {
@@ -16,10 +18,10 @@ width: 768px;
 
   @media (min-width: @tablet) {
     padding: @padding-tablet;
-  };
+  }
 
   @media (min-width: @desktop) {
-    padding: @padding-desktop;
+    padding: 0 110px;
   }
 }
 
@@ -48,8 +50,6 @@ width: 768px;
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 33px;
-
-
   background-repeat: no-repeat;
 
   @media (min-width: @tablet) {
@@ -65,15 +65,15 @@ width: 768px;
     background-size: 51px 53px;
     background-position: 22px 23px;
 
-  @media (min-width: @tablet) {
-    background-size: 200px 200px;
-    background-position: 87% 50%;
-  }
+    @media (min-width: @tablet) {
+      background-size: 200px 200px;
+      background-position: 88% 52%;
+    }
 
-  @media (min-width: @desktop) {
-    background-size: 105px 105px;
-    background-position: 20px 20px;
-  }
+    @media (min-width: @desktop) {
+      background-size: 103px 103px;
+      background-position: 51px 42px;
+    }
   }
 
   &--gainweight {
@@ -84,15 +84,14 @@ width: 768px;
     @media (min-width: @tablet) {
       background-size: 268px 200px;
       background-position: 93% 50%;
-    };
+    }
 
     @media (min-width: @desktop) {
       background-size: 134px 100px;
-      background-position: 20px 20px;
+      background-position: 33px 48px;
     }
-  };
+  }
 }
-
 
 .goal__header {
   font-size: 24px;
@@ -107,10 +106,13 @@ width: 768px;
     font-size: 36px;
     line-height: 36px;
     padding-left: 0;
-  };
+    margin-top: 70px;
+    margin-bottom: 24px;
+  }
 
   @media (min-width: @desktop) {
-    padding-left: 142px;
+    padding-left: 163px;
+    margin-bottom: 72px;
   }
 }
 
@@ -124,10 +126,13 @@ width: 768px;
     font-size: 16px;
     line-height: 24px;
     width: 340px;
-  };
+    margin-bottom: 52px;
+  }
 
   @media (min-width: @desktop) {
-    width: 450px;
+    width: 455px;
+    padding-left: 2px;
+    margin-bottom: 28px;
   }
 }
 
@@ -144,21 +149,31 @@ width: 768px;
 
   background-image: url(../../images/svg/icon_arrow.svg);
   background-repeat: no-repeat;
-  background-position: 100px center;
+  background-position: 132px center;
 
   &:active {
     opacity: 0.3;
-  };
+  }
 
   @media (max-width: @mobile-only) {
-  &::before {
-    content: "";
-    position: absolute;
-    width: 240px;
-    height: 2px;
-    background-color: #D9D9D9;
-    left: 0;
-    top: -20px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 240px;
+      height: 2px;
+      background-color: #D9D9D9;
+      left: 0;
+      top: -20px;
+    }
   }
-}
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 30px;
+    background-position: 100px center;
+  }
+
+  @media (min-width: @desktop) {
+    background-position: 132px center;
+  }
 }

@@ -3,12 +3,16 @@
   position: relative;
   margin-bottom: 6px;
 
-  @media (min-width: @desktop) {
-    padding-top: 55px;
+  @media (min-width: @tablet) {
+    margin-bottom: 49px;
   }
- }
 
- .goals-checkbox::after {
+  @media (min-width: @desktop) {
+    padding-top: 42px;
+  }
+}
+
+.goals-checkbox::after {
   content: "";
   position: absolute;
   width: 305px;
@@ -18,7 +22,7 @@
   bottom: 0;
 
   @media (min-width: @tablet) {
-      display: none;
+    display: none;
   }
 }
 
@@ -28,17 +32,23 @@
   padding-top: 30px;
 
   @media (min-width: @tablet) {
-  border: 1px solid #E7E7E7;
-  padding-left: 60px;
-}
+    border: 1px solid #E7E7E7;
+    padding-left: 87px;
+    padding-top: 28px;
+    width: 543px;
+  }
 
-@media (min-width: @desktop) {
-  padding-bottom: 20px;
-}
+  @media (min-width: @desktop) {
+    width: 600px;
+    padding-bottom: 4px;
+    padding-top: 32px;
+    padding-left: 118px;
+    box-sizing: border-box;
+  }
 }
 
 .checkbox-list__item {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .goal-box {
@@ -58,7 +68,7 @@
   @media (min-width: @tablet) {
     width: 40px;
     height: 40px;
-    left: -50px;
+    left: -60px;
     top: -4px;
   }
 }

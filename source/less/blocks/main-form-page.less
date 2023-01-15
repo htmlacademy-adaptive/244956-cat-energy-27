@@ -13,12 +13,14 @@
 
   @media (min-width: @tablet) {
     width: 768px;
-    padding: @padding-tablet;
-  };
+    padding-left: 50px;
+    box-sizing: border-box;
+  }
 
   @media (min-width: @desktop) {
     width: 1440px;
-   }
+    padding-left: 86px;
+  }
 }
 
 .main-form-page__title {
@@ -27,11 +29,17 @@
   line-height: 36px;
   width: 268px;
 
-
   @media (min-width: @tablet) {
     font-size: 60px;
     line-height: 60px;
+    margin-top: 28px;
+    width: 450px;
+    margin-bottom: 31px;
+  }
 
+  @media (min-width: @desktop) {
+    margin-top: -21px;
+    margin-bottom: 36px;
   }
 }
 
@@ -42,10 +50,9 @@
   text-transform: uppercase;
   width: 225px;
 
-
-
   @media (min-width: @tablet) {
     font-size: 20px;
     line-height: 30px;
+    width: 380px;
   }
 }

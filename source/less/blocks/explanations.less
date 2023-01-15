@@ -5,11 +5,13 @@
 
   @media (min-width: @tablet) {
     width: 768px;
-    };
+  }
 
-    @media (min-width: @desktop) {
-      width: 1440px;
-    };
+  @media (min-width: @desktop) {
+    width: 1440px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .explanations__container {
@@ -17,10 +19,10 @@
 
   @media (min-width: @tablet) {
     padding: @padding-tablet;
-  };
+  }
 
   @media (min-width: @desktop) {
-    padding: @padding-desktop;
+    padding: 0 110px;
   }
 }
 
@@ -35,10 +37,11 @@
   @media (min-width: @tablet) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 70px;
   }
 }
 
- .explanation {
+.explanation {
   .list-style;
   display: grid;
   grid-template-columns: 280px;
@@ -48,14 +51,14 @@
   @media (min-width: @tablet) {
     grid-template-columns: 240px 240px;
     grid-template-rows: 240px 240px;
-    grid-column-gap: 120px;
-    grid-row-gap: 60px;
-  };
+    grid-column-gap: 144px;
+    grid-row-gap: 77px;
+  }
 
   @media (min-width: @desktop) {
     grid-template-columns: repeat(4, 260px);
     grid-template-rows: 280px;
-    grid-gap: 60px;
+    grid-gap: 65px;
   }
 }
 
@@ -69,33 +72,51 @@
     grid-template-columns: 80px 140px;
     grid-template-rows: 80px 80px;
     gap: 30px;
-
     background-repeat: no-repeat;
-    background-position: 80% 0;
-}
+  }
 }
 
 .explanation__item--functional {
   @media (min-width: @tablet) {
     background-image: url(../../images/svg/1.svg);
+    background-position: 75% 0;
+  }
+
+  @media (min-width: @desktop) {
+    background-position: 66% 0;
   }
 }
 
 .explanation__item--potion {
   @media (min-width: @tablet) {
     background-image: url(../../images/svg/2.svg);
+    background-position: 95% 0;
+  }
+
+  @media (min-width: @desktop) {
+    background-position: 84% 0;
   }
 }
 
 .explanation__item--substitute {
   @media (min-width: @tablet) {
     background-image: url(../../images/svg/3.svg);
+    background-position: 95% 0;
+  }
+
+  @media (min-width: @desktop) {
+    background-position: 84% 0;
   }
 }
 
 .explanation__item--month {
   @media (min-width: @tablet) {
     background-image: url(../../images/svg/4.svg);
+    background-position: 105% 0;
+  }
+
+  @media (min-width: @desktop) {
+    background-position: 90% 0;
   }
 }
 
@@ -104,30 +125,22 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60px 60px;
-
-  @media (min-width: @tablet) {
-    background-size: 80px 80px;
-  }
 }
 
 .explanation__item--functional .explanation__deco {
   background-image: url(../../images/svg/icon-leaf.svg);
-
 }
 
 .explanation__item--potion .explanation__deco {
   background-image: url(../../images/svg/icon-potion.svg);
-
 }
 
 .explanation__item--substitute .explanation__deco {
   background-image: url(../../images/svg/icon-eat.svg);
-
 }
 
 .explanation__item--month .explanation__deco {
   background-image: url(../../images/svg/icon-clock.svg);
-
 }
 
 .explanation__text {
