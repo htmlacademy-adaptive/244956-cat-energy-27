@@ -4,18 +4,22 @@
 
 .additional-checkbox__title {
   position: relative;
-  margin-top: 21px;
+  margin-top: 8px;
   margin-bottom: 11px;
+  width: 160px;
 
   @media (min-width: @tablet) {
     padding-left: 40px;
     padding-right: 40px;
     margin-left: -40px;
     margin-bottom: 35px;
+    width: 292px;
+    margin-top: 21px;
   }
 
   @media (min-width: @desktop) {
-    margin-bottom: 29px;
+    margin-bottom: 30px;
+    margin-top: 24px;
   }
 }
 
@@ -23,20 +27,22 @@
   display: grid;
   grid-template-columns: 280px;
   grid-template-rows: auto(4, repeat);
-  margin-bottom: 16px;
+  margin-bottom: 6px;
 
   @media (min-width: @tablet) {
     grid-template-columns: 340px 300px;
     grid-template-rows: auto(2, repeat);
     border: none;
     padding-left: 60px;
-  };
+    padding-bottom: 7px;
+    grid-row-gap: 10px;
+  }
 
   @media (min-width: @desktop) {
     grid-template-columns: repeat(4, 280px);
     grid-template-rows: auto;
     grid-column-gap: 45px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
 }
 
@@ -45,7 +51,7 @@
   margin-bottom: 24px;
 
   @media (min-width: @tablet) {
-    margin-bottom: 42px;
+    margin-bottom: 33px;
   }
 }
 
@@ -93,4 +99,18 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.control-input:hover + .additional-box__control-mark {
+  border: 1px solid #BABABA;
+}
+
+.control-input:disabled + .additional-box__control-mark {
+  border: 1px solid #BABABA;
+  opacity: 0.3;
+}
+
+.control-input:disabled ~ .form-label {
+  color: #BABABA;
+  opacity: 0.3;
 }

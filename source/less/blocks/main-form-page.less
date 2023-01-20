@@ -3,23 +3,23 @@
   background-color: @white;
 }
 
-.form-page-container {
+.main-form-page__container {
   width: 320px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   padding: @padding-mobile;
-  margin-left: 43px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet) {
     width: 768px;
-    padding-left: 50px;
-    box-sizing: border-box;
+    padding-left: 60px;
   }
 
   @media (min-width: @desktop) {
     width: 1440px;
-    padding-left: 86px;
+    padding-left: 109px;
+    padding-top: 23px;
   }
 }
 
@@ -28,13 +28,14 @@
   font-size: 36px;
   line-height: 36px;
   width: 268px;
+  margin-top: 28px;
 
   @media (min-width: @tablet) {
     font-size: 60px;
     line-height: 60px;
     margin-top: 28px;
     width: 450px;
-    margin-bottom: 31px;
+    margin-bottom: 34px;
   }
 
   @media (min-width: @desktop) {
@@ -49,6 +50,7 @@
   line-height: 18px;
   text-transform: uppercase;
   width: 225px;
+  margin-bottom: 18px;
 
   @media (min-width: @tablet) {
     font-size: 20px;

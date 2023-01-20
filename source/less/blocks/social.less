@@ -1,0 +1,31 @@
+.social {
+  margin: 0 auto;
+}
+
+.social__list {
+  display: flex;
+  .list-style;
+  margin: 0 auto;
+  width: 132px;
+  justify-content: space-between;
+  padding-right: 5px;
+
+  @media (min-width: @tablet) {
+    padding-right: 17px;
+  }
+}
+
+.social__link {
+  width: 26px;
+  height: 17px;
+  background: @darker-white;
+}
+
+.social__link:hover .social__picture {
+  fill: #68B738;
+}
+
+.social__link:active .social__picture {
+  fill: #68B738;
+  opacity: 0.3;
+}

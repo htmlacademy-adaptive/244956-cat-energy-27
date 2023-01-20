@@ -1,0 +1,22 @@
+.footer-container {
+  padding: @padding-mobile;
+  box-sizing: border-box;
+  margin-bottom: 26px;
+
+  @media (min-width: @tablet) {
+    padding: 0 64px;
+    margin-top: 60px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: @desktop) {
+    margin-top: 0;
+    position: absolute;
+    width: 565px;
+    height: 200px;
+    background: @white;
+    top: 95px;
+    left: 110px;
+    z-index: 2;
+  }
+}

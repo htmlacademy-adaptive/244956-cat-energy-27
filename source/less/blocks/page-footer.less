@@ -1,0 +1,28 @@
+.page-footer {
+  background-color: @white;
+
+  @media (min-width: @desktop) {
+    background-color: #f2f2f2;
+  }
+}
+
+.catalog-page + .page-footer,
+.main-form-page + .page-footer {
+  background-color: #f2f2f2;
+}
+
+.footer-contacts-block {
+  position: relative;
+  margin: 0 auto;
+  width: 320px;
+  padding-top: 21px;
+
+  @media (min-width: @tablet) {
+    width: 768px;
+    padding-top: 0;
+  }
+
+  @media (min-width: @desktop) {
+    width: 1440px;
+  }
+}
