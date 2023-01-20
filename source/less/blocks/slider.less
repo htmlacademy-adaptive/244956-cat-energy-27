@@ -1,0 +1,100 @@
+.slider {
+  position: relative;
+  z-index: 3;
+}
+
+.slider__bar {
+  position: absolute;
+  height: 256px;
+  width: 4px;
+  background-color: #666666;
+  bottom: 0;
+  left: 137px;
+  cursor: e-resize;
+
+  @media (min-width: @tablet) {
+    height: 497px;
+    bottom: 113px;
+    left: 357px;
+  }
+
+  @media (min-width: @desktop) {
+    left: 392px;
+    bottom: 80px;
+  }
+}
+
+.slider__button {
+  position: absolute;
+  height: 38px;
+  width: 38px;
+  background-color: #ffffff;
+  top: 109px;
+  right: -20px;
+  z-index: 4;
+  overflow: visible;
+  border: 2px solid #666666;
+  border-radius: 50%;
+
+  @media (min-width: @tablet) {
+    top: 226px;
+  }
+}
+
+.slider__button::before {
+  content: "";
+  position: absolute;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #666666;
+  border-bottom: 10px solid transparent;
+  top: 10px;
+  left: -5px;
+}
+
+.slider__button::after {
+  content: "";
+  position: absolute;
+  border-top: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-left: 10px solid #666666;
+  border-bottom: 10px solid transparent;
+  top: 10px;
+  left: 23px;
+}
+
+.slider__bar:hover {
+  background-color: #68B738;
+
+  .slider__button {
+    border: 2px solid #68B738;
+  }
+
+  .slider__button::before {
+    border-right: 10px solid #68B738;
+  }
+
+  .slider__button::after {
+    border-left: 10px solid #68B738;
+  }
+}
+
+.slider__bar:active {
+  background-color: #5EAA2F;
+  opacity: 0.6;
+
+  .slider__button {
+    border: 2px solid #5EAA2F;
+    opacity: 0.6;
+  }
+
+  .slider__button::before {
+    border-right: 10px solid #5EAA2F;
+    opacity: 0.6;
+  }
+
+  .slider__button::after {
+    border-left: 10px solid #5EAA2F;
+    opacity: 0.6;
+  }
+}

@@ -32,21 +32,8 @@
 .main-form__item:not(.button) {
   border: none;
   margin: 0;
-  padding: 0;
-}
-
-.form-label {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: @grey;
-  margin-right: 12px;
-
-  @media (min-width: @tablet) {
-    font-size: 20px;
-    line-height: 30px;
-  }
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .main-form__input {
@@ -57,47 +44,67 @@
   text-transform: uppercase;
   color: @grey;
 
+  padding: 11px 20px;
+  border: 1px solid #E7E7E7;
+
   @media (min-width: @tablet) {
     font-size: 20px;
     line-height: 30px;
   }
-}
 
-.info-title {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 26px;
-  box-sizing: border-box;
-  width: fit-content;
-  background-color: @white;
-  padding-right: 2px;
+  &:hover {
+    border: 1px solid #CDCDCD;
+  }
 
-  @media (min-width: @tablet) {
-    font-size: 36px;
-    line-height: 36px;
+  &:focus {
+    border: 1px solid #444444;
+    border-radius: 0;
+  }
+
+  .main-form__input--invalid {
+    border: 1px solid #FF8282;
   }
 }
 
-.owner-info__title::before,
-.comments-field__title::before,
-.additional-checkbox__title::before {
-  position: absolute;
-  content: "";
-  width: 205px;
-  height: 2px;
-  background-color: @main-color;
-  left: 91px;
-  top: 16px;
-  z-index: -1;
+.main-form__aside {
+  .lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
 
   @media (min-width: @tablet) {
-    top: 23px;
-    left: -26px;
-    width: 754px;
+    margin-left: 64px;
+    font-size: 16px;
+    line-height: 16px;
   }
 
   @media (min-width: @desktop) {
-    width: 1427px;
-    left: -64px;
+    margin-left: 84px;
   }
 }
+
+.button-form {
+  box-sizing: border-box;
+  width: 280px;
+  padding: 10px 60px;
+  margin-bottom: 9px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 53px;
+    font-size: 20px;
+    line-height: 20px;
+    width: 283px;
+    padding: 15px 60px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 50px;
+    width: 568px;
+    padding: 16px 165px;
+  }
+}
+

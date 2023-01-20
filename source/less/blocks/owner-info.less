@@ -1,21 +1,25 @@
 .owner-info {
   grid-area: owner;
-
   }
 
 .owner-info__title {
   position: relative;
-  margin-bottom: 18px;
+  margin-top: 11px;
+  width: 202px;
+  margin-bottom: 20px;
+
 
   @media (min-width: @tablet) {
     margin-bottom: 58px;
     padding-left: 40px;
     padding-right: 40px;
     margin-left: -40px;
+    margin-top: 65px;
+    width: 594px;
   }
 
   @media (min-width: @desktop) {
-    margin-top: 0;
+    margin-top: 3px;
   }
 }
 
@@ -25,7 +29,7 @@
 
   @media (min-width: @tablet) {
     padding-bottom: 41px;
-  };
+  }
 
   @media (min-width: @desktop) {
     flex-direction: row;
@@ -42,7 +46,15 @@
 }
 
 .owner-info__label {
-  margin-right: 18px;
+  margin-right: 7px;
+
+  @media (min-width: @tablet) {
+    margin-right: 25px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-right: 20px;
+  }
 }
 
 .owner-info__input-mail {
@@ -50,7 +62,7 @@
   background-image: url(../../images/svg/icon-envelope.svg);
   background-repeat: no-repeat;
   background-size: 25px 20px;
-  background-position: 97% 50%;
+  background-position: 95% 50%;
   padding-left: 14px;
 
   &:focus {
@@ -64,7 +76,7 @@
   }
 
   @media (min-width: @desktop) {
-    width: 450px;
+    width: 440px;
     padding-left: 19px;
   }
 }
@@ -83,7 +95,7 @@
   background-image: url(../../images/svg/icon-phone.svg);
   background-repeat: no-repeat;
   background-size: 20px 15px;
-  background-position: 97% 50%;
+  background-position: 94% 50%;
   padding-top: 16px;
   padding-left: 15px;
 
@@ -102,10 +114,10 @@
   }
 }
 
-.owner-info__item--email .main-form__input--invalid {
-  background-image: url(../../images/svg/icon_emailred.svg);
+.owner-info__item--email .input--invalid { /*класс будет добавляться с помощью JS*/
+  background-image: url("../../images/svg/icon_emailred.svg");
 }
 
-.owner-info__item--phone .main-form__input--invalid {
-  background-image: url(../../images/svg/icon-phonered.svg)
+.owner-info__item--phone .input--invalid {
+  background-image: url("../../images/svg/icon-phonered.svg")
 }

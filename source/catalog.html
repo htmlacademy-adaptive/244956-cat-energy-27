@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" as="font">
     <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font">
     <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font">
@@ -19,8 +19,8 @@
             <source media="(min-width:1440px)" srcset="images/logo-desktopx1.png 1x, images/logo-desktopx2.png 2x" width="202" height="59">
             <source media="(min-width:768px)" srcset="images/logo-tablet.png 1x, images/logo-tabletx2.png 2x" width="174" height="51">
             <img class="page-header__logo-pic" src="images/svg/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
-            <img class="page-header__logo-text" src="images/svg/logo-text.svg" width="101" height="18" alt="Cat Energy">
           </picture>
+          <img class="page-header__logo-text" src="images/svg/logo-text.svg" width="101" height="18" alt="Cat Energy">
       </a>
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -41,7 +41,7 @@
     </header>
 
     <main class="catalog-page">
-      <div class="catalog-page-container">
+      <div class="catalog-page__container">
       <h1 class="catalog-page__title">Каталог продукции</h1>
 
       <section class="catalog-page__item catalog">
@@ -50,6 +50,9 @@
           <li class="product-list__item product"><!--Первый товар-->
               <a class="product__image-link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="images/product1-desktopx1.webp 1x, images/product1-desktopx2.webp 2x" width="161" height="172">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/product1-tabletx1.webp 1x, images/product1-tabletx2.webp 2x" width="161" height="172">
+                  <source type="image/webp" srcset="images/product-1.webp 1x, images/product1x2.webp 2x" width="68" height="86">
                   <source media="(min-width: 1440px)" srcset="images/product1-desktopx1.png 1x, images/product1-desktopx2.png 2x" width="161" height="172">
                   <source media="(min-width: 768px)" srcset="images/product1-tabletx1.png 1x, images/product1-tabletx2.png 2x" width="161" height="172">
                   <img class="product__image"
@@ -82,6 +85,9 @@
           <li class="product-list__item product"><!--Второй товар-->
               <a class="product__image-link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="images/product1-desktopx2.webp 1x, images/product2-desktopx2.webp 2x" width="172" height="196">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/product1-tabletx2.webp 1x, images/product2-tabletx2.webp 2x" width="168" height="206">
+                  <source type="image/webp" srcset="images/product-2.webp 1x, images/product2x2.webp 2x" width="84" height="100">
                   <source media="(min-width: 1440px)" srcset="images/product2-desktopx1.png 1x, images/product2-desktopx2.png 2x" width="172" height="196">
                   <source media="(min-width: 768px)" srcset="images/product2-tabletx1.png 1x, images/product2-tabletx2.png 2x" width="168" height="206">
                   <img class="product__image"
@@ -114,6 +120,9 @@
           <li class="product-list__item product"><!--Третий товар-->
               <a class="product__image-link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="images/product3-desktopx1.webp 1x, images/product3-desktopx2.webp 2x" width="161" height="172">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/product3-tabletx1.webp 1x, images/product3-tabletx2.webp 2x" width="161" height="172">
+                  <source type="image/webp" srcset="images/product-3.webp 1x, images/product3x2.webp 2x" width="68" height="86">
                   <source media="(min-width: 1440px)" srcset="images/product3-desktopx1.png 1x, images/product3-desktopx2.png 2x" width="161" height="172">
                   <source media="(min-width: 768px)" srcset="images/product3-tabletx1.png 1x, images/product3-tabletx2.png 2x" width="161" height="172">
                   <img class="product__image"
@@ -146,6 +155,9 @@
           <li class="product-list__item product"><!--Четвертый товар-->
               <a class="product__image-link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="images/product4-desktopx2.webp 1x, images/product4-desktopx2.webp 2x" width="172" height="196">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/product4-tabletx2.webp 1x, images/product4-tabletx2.webp 2x" width="168" height="206">
+                  <source type="image/webp" srcset="images/product-4.webp 1x, images/product4x2.webp 2x" width="84" height="100">
                   <source media="(min-width: 1440px)" srcset="images/product4-desktopx1.png 1x, images/product4-desktopx2.png 2x" width="172" height="196">
                   <source media="(min-width: 768px)" srcset="images/product4-tabletx1.png 1x, images/product4-tabletx2.png 2x" width="168" height="206">
                   <img class="product__image"
@@ -178,6 +190,9 @@
           <li class="product-list__item product"><!--Пятый товар-->
               <a class="product__image-link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="images/product5-desktopx1.webp 1x, images/product5-desktopx2.webp 2x" width="161" height="172">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/product5-tabletx1.webp 1x, images/product5-tabletx2.webp 2x" width="161" height="172">
+                  <source type="image/webp" srcset="images/product-5.webp 1x, images/product5x2.webp 2x" width="68" height="86">
                   <source media="(min-width: 1440px)" srcset="images/product5-desktopx1.png 1x, images/product5-desktopx2.png 2x" width="161" height="172">
                   <source media="(min-width: 768px)" srcset="images/product5-tabletx1.png 1x, images/product5-tabletx2.png 2x" width="161" height="172">
                   <img class="product__image"
@@ -210,6 +225,9 @@
           <li class="product-list__item product"><!--Шестой товар-->
               <a class="product__image-link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="images/product6-desktopx2.webp 1x, images/product6-desktopx2.webp 2x" width="172" height="196">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/product6-tabletx2.webp 1x, images/product6-tabletx2.webp 2x" width="168" height="206">
+                  <source type="image/webp" srcset="images/product-6.webp 1x, images/product6x2.webp 2x" width="84" height="100">
                   <source media="(min-width: 1440px)" srcset="images/product6-desktopx1.png 1x, images/product6-desktopx2.png 2x" width="172" height="196">
                   <source media="(min-width: 768px)" srcset="images/product6-tabletx1.png 1x, images/product6-tabletx2.png 2x" width="168" height="206">
                   <img class="product__image"
@@ -242,6 +260,9 @@
           <li class="product-list__item product"><!--Седьмой товар-->
               <a class="product__image-link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="images/product7-desktopx1.webp 1x, images/product7-desktopx2.webp 2x" width="161" height="172">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/product7-tabletx1.webp 1x, images/product7-tabletx2.webp 2x" width="161" height="172">
+                  <source type="image/webp" srcset="images/product-7.webp 1x, images/product7x2.webp 2x" width="68" height="86">
                   <source media="(min-width: 1440px)" srcset="images/product7-desktopx1.png 1x, images/product7-desktopx2.png 2x" width="161" height="172">
                   <source media="(min-width: 768px)" srcset="images/product7-tabletx1.png 1x, images/product7-tabletx2.png 2x" width="161" height="172">
                   <img class="product__image"
@@ -330,7 +351,7 @@
     <footer class="page-footer">
 
       <div class="page-footer__element footer-contacts-block">
-        <div class="footer-container">
+        <div class="footer-contacts-block__element footer-container">
         <section class="footer-contacts">
           <h2 class="visually-hidden">Контакты офиса Cat Energy.</h2>
           <p class="footer-contacts__invitation">Приглашаем<br>к сотрудничеству дилеров!</p>
@@ -340,7 +361,15 @@
           </address>
           </section>
         </div>
-          <p class="footer-contacts__map">
+          <p class="footer-contacts-block__element footer-map map-nojs">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="images/map-desktop.webp 1x, images/map-desktopx2.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/map-tablet.webp 1x, images/map-tabletx2.webp 2x" >
+              <source type="image/webp"  srcset="images/map.webp 1x, images/mapx2.webp 2x" width="320" height="362">
+              <source media="(min-width: 1440px)" srcset="images/map-desktop.jpg 1x, images/map-desktopx2.jpg 2x">
+              <source media="(min-width: 768px)" srcset="images/map-tablet.jpg 1x, images/map-tabletx2.jpg 2x">
+              <img src="images/map.jpg" width="320" height="362" alt="Карта проезда к нашему офису" srcset="images/mapx2.jpg 2x">
+            </picture>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7994.603450858922!2d30.317711443740404!3d59.937935387156344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sqa!4v1669656616512!5m2!1sru!2sqa"
             width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>

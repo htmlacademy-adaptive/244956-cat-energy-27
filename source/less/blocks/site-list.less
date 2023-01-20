@@ -1,0 +1,129 @@
+.site-list {
+  .list-style;
+  display: grid;
+  grid-template-columns: minmax(360px, 800px);
+  background-color: @white;
+
+  @media (min-width: @tablet) {
+    margin-left: -13px;
+    grid-template-columns: repeat(3, 153px);
+    gap: 36px;
+  }
+
+  @media (min-width: @desktop) {
+    color: @black;
+    background-color: transparent;
+    grid-template-columns: 174px 174px 174px;
+    gap: 30px;
+  }
+}
+
+.site-list__item {
+  box-sizing: border-box;
+  height: 66px;
+  text-align: center;
+  padding-top: 23px;
+  border-top: 1px solid #E6E6E6;
+  cursor: pointer;
+  width: 100%;
+
+  @media (min-width: @tablet) {
+    height: auto;
+    border-top: none;
+
+    padding-top: 19px;
+  }
+
+  @media (min-width: @desktop) {
+    min-width: 170px;
+    z-index: 3;
+  }
+}
+
+.site-list__link--item-current {
+  @media (min-width: @tablet) {
+    box-shadow: 0 2px 0 0 @main-color;
+  }
+
+  @media (min-width: @desktop) {
+    box-shadow: 0 2px 0 0 @main-color;
+  }
+}
+
+.site-list__link {
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+
+  &:hover {
+    color: fade(@black, 70%);
+  }
+
+  &:disabled {
+    color: fade(@black, 30%);
+  }
+
+  &:active {
+    box-shadow: 0 2px 0 0 @main-color;
+  }
+
+  @media (min-width: @tablet) {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: left;
+    padding-bottom: 6px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-left: 3px;
+    line-height: 30px;
+    font-size: 20px;
+}
+}
+
+.site-list .site-list__item--main {
+  @media (min-width: @tablet) {
+    text-align: end;
+    min-width: 155px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 100px;
+    text-align: center;
+  }
+}
+
+.site-list__link--white {
+  @media (min-width: @desktop) {
+    color: @white;
+
+    &:hover {
+      color: fade(@white, 70%)
+    }
+
+    &:disabled {
+      color: fade(@white, 30%);
+    }
+
+    &:active {
+      box-shadow: 0 3px 0 0 @white;
+    }
+  }
+}
+
+.site-list__link--main {
+  @media (min-width: @tablet) {
+    width: 65px;
+    margin-left: auto;
+  }
+
+  @media (min-width: @desktop) {
+    margin-left: 103px;
+    box-shadow: 0 3px 0 0 @white;
+  }
+}

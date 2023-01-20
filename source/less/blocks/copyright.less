@@ -1,5 +1,24 @@
 .copyright__link {
   text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet) {
+    justify-content: end;
+    margin-right: 13px;
+  }
+}
+
+.copyright__link:hover .copyright__picture {
+  fill: @main-color;
+}
+
+.copyright__link:active {
+  opacity: 0.6;
+
+  .copyright__picture {
+    opacity: 0.6;
+  }
 }
 
 .copyright__text {
@@ -8,4 +27,10 @@
   font-size: 16px;
   line-height: 19px;
   color: @grey;
+  margin-top: 8px;
+
+  @media (min-width: @tablet) {
+    margin-right: 27px;
+    margin-top: 5px;
+  }
 }

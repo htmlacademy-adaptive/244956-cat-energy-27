@@ -55,28 +55,63 @@ html {
 
   &:hover {
     background-color: #5EAA2F;
-  };
+  }
 
   &:active {
     background-color: #5EAA2F;
-    opacity: 0.7;
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
-.main-form__input {
-  padding: 11px 20px;
-  border: 1px solid #E7E7E7;
+.form-label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @grey;
+  margin-right: 12px;
 
-  &:hover {
-    border: 1px solid #CDCDCD;
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.info-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  box-sizing: border-box;
+  width: fit-content;
+  background-color: @white;
+  padding-right: 2px;
+
+  @media (min-width: @tablet) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.owner-info__title::before,
+.comments-field__title::before,
+.additional-checkbox__title::before {
+  position: absolute;
+  content: "";
+  width: 205px;
+  height: 2px;
+  background-color: @main-color;
+  left: 91px;
+  top: 16px;
+  z-index: -1;
+
+  @media (min-width: @tablet) {
+    top: 23px;
+    left: -26px;
+    width: 754px;
   }
 
-  &:focus {
-    border: 1px solid #444444;
-    border-radius: 0;
-  }
-
-  .main-form__input--invalid {
-    border: 1px solid #FF8282;
+  @media (min-width: @desktop) {
+    width: 1427px;
+    left: -64px;
   }
 }

@@ -2,22 +2,24 @@
   display: flex;
   width: 320px;
   margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 17px;
+  padding-top: 11px;
+  padding-bottom: 16px;
   flex-direction: column;
 
   @media (min-width: @tablet) {
     width: 768px;
     flex-direction: row;
     justify-content: start;
-    padding: @padding-tablet;
+    padding-top: 0;
+    padding-left: 25px;
+    padding-bottom: 16px;
     margin: 0 auto;
     box-sizing: border-box;
   }
 
   @media (min-width: @desktop) {
     width: 1440px;
-    padding: 65px 100px;
+    padding: 53px 100px;
   }
 }
 
@@ -31,7 +33,6 @@
   @media (min-width: @tablet) {
     padding-left: 0;
     margin: 0;
-    margin-top: 10px;
   }
 
   @media (min-width: @desktop) {
@@ -66,10 +67,17 @@
 
 .page-header__logo-text {
   position: absolute;
-  left: 91px;
+  left: 90px;
   top: 12px;
 
   @media (min-width: @tablet) {
     display: none;
+  }
+}
+
+.page-header .main-nav--nojs {
+  @media (max-width: @mobile-only) {
+    margin-left: 0;
+    width: 320px;
   }
 }
