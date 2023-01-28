@@ -5,17 +5,17 @@
 
 .slider__bar {
   position: absolute;
-  height: 256px;
+  height: 257px;
   width: 4px;
   background-color: #666666;
-  bottom: 0;
-  left: 137px;
+  bottom: -3px;
+  left: 138px;
   cursor: e-resize;
 
   @media (min-width: @tablet) {
-    height: 497px;
-    bottom: 113px;
-    left: 357px;
+    height: 512px;
+    bottom: 97px;
+    left: 50%;
   }
 
   @media (min-width: @desktop) {
@@ -29,15 +29,16 @@
   height: 38px;
   width: 38px;
   background-color: #ffffff;
-  top: 109px;
-  right: -20px;
+  top: 107px;
+  right: -21px;
   z-index: 4;
   overflow: visible;
   border: 2px solid #666666;
   border-radius: 50%;
 
   @media (min-width: @tablet) {
-    top: 226px;
+    top: 234px;
+    right: -18px;
   }
 }
 
@@ -64,37 +65,37 @@
 }
 
 .slider__bar:hover {
-  background-color: #68B738;
+  background-color: #68b738;
 
   .slider__button {
-    border: 2px solid #68B738;
+    border: 2px solid #68b738;
   }
 
   .slider__button::before {
-    border-right: 10px solid #68B738;
+    border-right: 10px solid #68b738;
   }
 
   .slider__button::after {
-    border-left: 10px solid #68B738;
+    border-left: 10px solid #68b738;
   }
 }
 
 .slider__bar:active {
-  background-color: #5EAA2F;
+  background-color: #5eaa2f;
   opacity: 0.6;
 
   .slider__button {
-    border: 2px solid #5EAA2F;
+    border: 2px solid #5eaa2f;
     opacity: 0.6;
   }
 
   .slider__button::before {
-    border-right: 10px solid #5EAA2F;
+    border-right: 10px solid #5eaa2f;
     opacity: 0.6;
   }
 
   .slider__button::after {
-    border-left: 10px solid #5EAA2F;
+    border-left: 10px solid #5eaa2f;
     opacity: 0.6;
   }
 }

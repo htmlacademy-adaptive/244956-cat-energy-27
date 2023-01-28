@@ -1,10 +1,11 @@
 .goals {
   margin: 0 auto;
   width: 320px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet) {
     width: 768px;
-    margin-bottom: 38px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: @desktop) {
@@ -17,31 +18,11 @@
   padding: @padding-mobile;
 
   @media (min-width: @tablet) {
-    padding: 0 22px;
+    padding: 0 30px;
     box-sizing: border-box;
   }
 
   @media (min-width: @desktop) {
-    padding: 0 110px;
-  }
-}
-
-.goal-list {
-  .list-style;
-  display: grid;
-  grid-template-columns: 280px;
-  grid-template-rows: auto auto;
-  grid-row-gap: 22px;
-
-  @media (min-width: @tablet) {
-    grid-template-columns: 708px;
-    grid-template-rows: auto auto;
-    grid-row-gap: 24px;
-  }
-
-  @media (min-width: @desktop) {
-    grid-template-columns: 570px 570px;
-    grid-template-rows: auto;
-    grid-gap: 80px;
+    padding: 0 104px;
   }
 }

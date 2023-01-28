@@ -1,5 +1,5 @@
 .example {
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
 
   @media (min-width: @tablet) {
     background-color: @white;
@@ -7,8 +7,8 @@
   }
 
   @media (min-width: @desktop) {
-    background-image: linear-gradient(to bottom, #ffffff 24%, #f2f2f2 27%);
-    margin-bottom: -15px;
+    background-image: linear-gradient(to bottom, #ffffff 27%, #f2f2f2 27%);
+    margin-bottom: 16px;
   }
 }
 
@@ -19,15 +19,19 @@
   flex-direction: column;
 
   @media (min-width: @tablet) {
-    width: 768px;
+    width: 100vw;
+    margin: 0;
+    display: block;
     box-sizing: border-box;
   }
 
   @media (min-width: @desktop) {
     width: 1440px;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;
+    margin: 0 auto;
   }
 }
 
@@ -37,8 +41,11 @@
   flex-direction: column;
   padding-bottom: 0;
 
+
   @media (min-width: @tablet) {
-    padding: 0 24px;
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 20px 0 31px;
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 50px;
@@ -66,6 +73,7 @@
     line-height: 60px;
     margin-bottom: 47px;
     margin-top: 46px;
+    box-sizing: border-box;
   }
 
   @media (min-width: @desktop) {
@@ -85,68 +93,13 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 69px;
+    box-sizing: border-box;
   }
 
   @media (min-width: @desktop) {
     width: 433px;
     margin-left: 81px;
     margin-bottom: 83px;
-  }
-}
-
-.stats-list {
-  .list-style;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  margin-bottom: 20px;
-
-  @media (min-width: @tablet) {
-    margin: 0 0 38px;
-  }
-
-  @media (min-width: @desktop) {
-    padding-left: 80px;
-    width: 368px;
-    margin: 0;
-  }
-}
-
-.stats-list__item {
-  width: 124px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-
-  @media (min-width: @tablet) {
-    width: 165px;
-    margin-right: 40px;
-  }
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 128px;
-    height: 58px;
-    background-image: url(../../images/svg/weight-back.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    left: 0;
-    top: -16px;
-    z-index: 2;
-
-    @media (min-width: @tablet) {
-      width: 165px;
-      height: 84px;
-      background-size: 100%;
-      top: -20px;
-    }
-  }
-
-  @media (min-width: @desktop) {
-    margin-right: 0;
-    margin-bottom: 52px;
   }
 }
 
@@ -164,7 +117,7 @@
     justify-content: left;
     font-size: 20px;
     line-height: 20px;
-    margin-left: 121px;
+    margin-left: 119px;
     margin-top: -4px;
     width: 180px;
     text-align: right;
@@ -182,6 +135,10 @@
 
 .example__info-definition {
   margin-inline-start: 0;
+
+  @media (min-width: @desktop) {
+    margin-left: 5px;
+  }
 }
 
 .example__info-term {
@@ -189,6 +146,7 @@
 
   @media (min-width: @tablet) {
     margin-bottom: 9px;
+    margin-right: 0;
   }
 }
 
@@ -199,22 +157,25 @@
   margin-bottom: 41px;
 
   @media (min-width: @tablet) {
-    margin: 0 auto;
-    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to bottom, #ffffff 25%, #eaeaea 24%);
+    width: 100vw;
     box-sizing: border-box;
-    background-image: linear-gradient(to bottom, #ffffff 24%, #EAEAEA 21%);
+    padding-bottom: 1px;
   }
 
   @media (min-width: @desktop) {
     padding: 0;
     background: transparent;
+    align-self: start;
   }
 }
 
 .example__image {
   z-index: 0;
   position: relative;
-  background-image: url(../../images/after@1x.png);
+  background-image: url("../../images/after@1x.png");
   background-repeat: no-repeat;
   width: 280px;
   height: 256px;
@@ -222,18 +183,19 @@
   padding: 0;
 
   @media (min-resolution: 2dppx) {
-    background-image: url(../../images/after@2x.png);
+    background-image: url("../../images/after@2x.png");
   }
 
   @media (min-width: @tablet) {
-    background-image: url(../../images/tabletafter@1x.png);
+    background-image: url("../../images/tabletafter@1x.png");
     width: 560px;
     height: 512px;
     margin: 0 auto;
     margin-bottom: 97px;
+    box-sizing: border-box;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../../images/tabletafter@2x.png);
+      background-image: url("../../images/tabletafter@2x.png");
     }
   }
 
@@ -248,8 +210,8 @@
   height: 284px;
   width: 50%;
   max-width: 100%;
-  background-color: #EAEAEA;
-  background-image: url(../../images/before@1x.png);
+  background-color: #eaeaea;
+  background-image: url("../../images/before@1x.png");
   background-repeat: no-repeat;
   background-size: 280px 245px;
   background-position: 0% 23%;
@@ -257,29 +219,31 @@
   resize: horizontal;
   top: 0;
   z-index: 2;
+  box-sizing: border-box;
 
   @media (min-resolution: 2dppx) {
-    background-image: url(../../images/before@2x.png);
+    background-image: url("../../images/before@2x.png");
   }
 
   @media (min-width: @tablet) {
-    background-image: url(../../images/tabletbefore@1x.png), linear-gradient(to bottom, #ffffff 29%, #EAEAEA 26%);
+    background-image: url("../../images/tabletbefore@1x.png"), linear-gradient(to bottom, #ffffff 29%, #eaeaea 30%);
     height: 512px;
     width: 50%;
     max-width: 100%;
-    background-size: 560px 512px, 100%;
+    background-size: 565px 512px, 100%;
     background-position: 0% 23%, center;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../../images/tabletbefore@2x.png), linear-gradient(to bottom, #ffffff 29%, #EAEAEA 26%);
+      background-image: url("../../images/tabletbefore@2x.png"), linear-gradient(to bottom, #ffffff 29%, #eaeaea 30%);
     }
   }
 
   @media (min-width: @desktop) {
-    background-image: url(../../images/tabletbefore@1x.png), linear-gradient(to bottom, #ffffff 23%, #f2f2f2 26%);
+    background-color: transparent;
+    background-image: url("../../images/tabletbefore@1x.png"), linear-gradient(to bottom, #ffffff 23%, transparent 26%);
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../../images/tabletbefore@2x.png), linear-gradient(to bottom, #ffffff 23%, #f2f2f2 26%);
+      background-image: url("../../images/tabletbefore@2x.png"), linear-gradient(to bottom, #ffffff 23%, transparent 26%);
     }
   }
 }

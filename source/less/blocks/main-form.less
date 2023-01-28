@@ -16,6 +16,7 @@
   @media (min-width: @tablet) {
     grid-template-columns: 708px;
     grid-template-rows: auto(6, repeat);
+    margin-bottom: 17px;
   }
 
   @media (min-width: @desktop) {
@@ -34,6 +35,9 @@
   margin: 0;
   padding-left: 0;
   padding-right: 0;
+  margin-left: 1px;
+  margin-top: 1px;
+  box-sizing: border-box;
 }
 
 .main-form__input {
@@ -45,7 +49,7 @@
   color: @grey;
 
   padding: 11px 20px;
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
 
   @media (min-width: @tablet) {
     font-size: 20px;
@@ -53,7 +57,7 @@
   }
 
   &:hover {
-    border: 1px solid #CDCDCD;
+    border: 1px solid #cdcdcd;
   }
 
   &:focus {
@@ -62,7 +66,7 @@
   }
 
   .main-form__input--invalid {
-    border: 1px solid #FF8282;
+    border: 1px solid #ff8282;
   }
 }
 
@@ -74,17 +78,18 @@
   text-align: center;
 
   @media (min-width: @tablet) {
-    margin-left: 64px;
+    margin-left: 62px;
     font-size: 16px;
     line-height: 16px;
   }
 
   @media (min-width: @desktop) {
-    margin-left: 84px;
+    margin-left: 80px;
+    margin-top: 18px;
   }
 }
 
-.button-form {
+.main-form__button-form {
   box-sizing: border-box;
   width: 280px;
   padding: 10px 60px;
@@ -102,7 +107,7 @@
   }
 
   @media (min-width: @desktop) {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     width: 568px;
     padding: 16px 165px;
   }

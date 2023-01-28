@@ -13,9 +13,9 @@
 .cat-info::after {
   content: "";
   position: absolute;
-  width: 316px;
+  width: 318px;
   height: 1px;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   left: -20px;
   bottom: -5px;
 
@@ -25,56 +25,71 @@
 }
 
 .cat-info__item--name {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet) {
+    width: 632px;
+  }
 }
 
 .cat-info__item--weight {
   margin-top: 0;
   margin-bottom: 18px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet) {
+    width: 636px;
+  }
 }
 
 .cat-info__item--age {
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: 9px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet) {
+    width: 634px;
     margin-bottom: 53px;
   }
 }
 
 .cat-info__input-name {
-  width: 183px;
+  width: 224px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet) {
-    width: 527px;
+    width: 567px;
   }
 
   @media (min-width: @desktop) {
-    width: 467px;
+    width: 510px;
   }
 }
 
 .cat-info__input-weight {
-  width: 161px;
+  width: 203px;
   margin-top: 0;
+  box-sizing: border-box;
 
   @media (min-width: @tablet) {
-    width: 500px;
+    width: 540px;
   }
 
   @media (min-width: @desktop) {
-    width: 439px;
+    width: 483px;
   }
 }
 
 .cat-info__input-age {
-  width: 128px;
+  width: 169px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet) {
-    width: 460px;
+    width: 498px;
   }
 
   @media (min-width: @desktop) {
-    width: 398px;
+    width: 442px;
   }
 }

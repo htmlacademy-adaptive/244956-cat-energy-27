@@ -13,7 +13,7 @@
 
   @media (min-width: @tablet) {
     width: 768px;
-    padding-left: 60px;
+    padding-left: 69px;
   }
 
   @media (min-width: @desktop) {
@@ -29,6 +29,21 @@
   line-height: 36px;
   width: 268px;
   margin-top: 28px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 318px;
+    height: 1px;
+    background-color: #d9d9d9;
+    left: -20px;
+    bottom: 63px;
+
+    @media (min-width: @tablet) {
+      display: none;
+    }
+  }
 
   @media (min-width: @tablet) {
     font-size: 60px;
@@ -56,5 +71,9 @@
     font-size: 20px;
     line-height: 30px;
     width: 380px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 20px;
   }
 }

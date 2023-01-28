@@ -1,6 +1,6 @@
 .product {
-  border-top: 1px solid #EBEBEB;
-  border-bottom: 1px solid #EBEBEB;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -12,6 +12,10 @@
     background-color: @darker-white;
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  @media (min-width: @desktop) {
+    padding-top: 4px;
   }
 }
 
@@ -33,6 +37,8 @@
 }
 
 .product__image {
+  transform: translateY(10px);
+
   @media (min-width: @tablet) {
     display: block;
     margin: 0 auto;
@@ -81,10 +87,32 @@
   }
 }
 
-.product-list li:nth-child(2n) .product__name {
+.product--even .product__image-link {
+  @media (min-width: @tablet) {
+    margin-bottom: -65px;
+  }
+}
+
+.product--even .product__name {
   @media (min-width: @desktop) {
     margin-top: 29px;
     box-sizing: border-box;
+  }
+}
+
+.product--even .product__image {
+  transform: translateY(-6px);
+
+  @media (min-width: @tablet) {
+    transform: translateY(-81px);
+  }
+}
+
+.product--first .product__image {
+  transform: translateY(-3px);
+
+  @media (min-width: @tablet) {
+    transform: translateY(-51px);
   }
 }
 
@@ -99,6 +127,10 @@
   @media (min-width: @tablet) {
     font-size: 20px;
     line-height: 24px;
+  }
+
+  @media (min-width: @desktop) {
+    line-height: 21px;
   }
 }
 
@@ -133,11 +165,17 @@
     font-size: 16px;
     padding-bottom: 6px;
     padding-top: 9px;
-    border-bottom: 1px solid #CDCDCD;
+    border-bottom: 1px solid #cdcdcd;
   }
 
   @media (min-width: @desktop) {
     padding-bottom: 5px;
+  }
+}
+
+.product__table-data {
+  @media (min-width: @tablet) {
+    margin-right: -1px;
   }
 }
 
@@ -176,7 +214,8 @@
     width: 165px;
     font-size: 16px;
     line-height: 18px;
-    margin-bottom: 87px;
+    margin-left: -2px;
+    margin-bottom: 88px;
   }
 }
 
@@ -186,7 +225,7 @@
   margin-bottom: -3px;
 
   @media (min-width: @tablet) {
-    margin-left: 0;
+    margin-left: -5px;
     font-size: 20px;
     line-height: 22px;
     width: 167px;
@@ -195,5 +234,7 @@
 
   @media (min-width: @desktop) {
     margin-top: 23px;
+    margin-left: 0;
+    margin-bottom: 7px;
   }
 }

@@ -1,87 +1,30 @@
 .checkbox-list {
   .list-style;
   padding-left: 45px;
-  padding-top: 30px;
+  padding-top: 28px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet) {
-    border: 1px solid #E7E7E7;
+    border: 1px solid #e7e7e7;
     padding-left: 87px;
     padding-top: 30px;
-    width: 543px;
+    width: 631px;
+    box-sizing: border-box;
   }
 
   @media (min-width: @desktop) {
     width: 600px;
     padding-bottom: 4px;
     padding-top: 32px;
-    padding-left: 118px;
-    box-sizing: border-box;
+    padding-left: 87px;
+    margin-left: 31px;
   }
 }
 
 .checkbox-list__item {
-  margin-bottom: 24px;
-}
-
-.goal-box {
-  color: @light-black;
-  position: relative;
-}
-
-.goal-box__control-mark {
-  position: absolute;
-  top: -6px;
-  left: -44px;
-  width: 30px;
-  height: 30px;
-  border: 1px solid #CDCDCD;
-  border-radius: 50%;
+  margin-bottom: 25px;
 
   @media (min-width: @tablet) {
-    width: 40px;
-    height: 40px;
-    left: -60px;
-    top: -4px;
+    margin-bottom: 24px;
   }
-}
-
-.control-input[type="radio"]:checked + .goal-box__control-mark::before {
-  position: absolute;
-  top: 8px;
-  left: 9px;
-  width: 13px;
-  height: 13px;
-  background-color: @main-color;
-  border-radius: 50%;
-  content: "";
-
-  @media (min-width: @tablet) {
-    width: 18px;
-    height: 18px;
-    top: 11px;
-    left: 11px;
-  }
-}
-
-.goal-box__control-label {
-  color: #222222;
-
-  @media (min-width: @tablet) {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-
-.control-input:hover + .goal-box__control-mark {
-  border: 1px solid #BABABA;
-}
-
-.control-input:disabled + .goal-box__control-mark {
-  border: 1px solid #BABABA;
-  opacity: 0.3;
-}
-
-.control-input:disabled ~ .form-label {
-  color: #BABABA;
-  opacity: 0.3;
 }

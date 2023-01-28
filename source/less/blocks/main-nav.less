@@ -7,9 +7,8 @@
 
 
   @media (min-width: @tablet) {
-    width: 625px;
+    width: 497px;
     margin: 0;
-    margin-left: 0;
     margin-bottom: 24px;
   }
 
@@ -28,7 +27,7 @@
 .main-nav--open .main-nav__list {
   @media (max-width: @mobile-only) {
     position: absolute;
-    z-index:3;
+    z-index: 3;
     margin: 0 auto;
     left: -339px;
     top: 16px;
@@ -38,12 +37,17 @@
 }
 
 .main-nav--nojs .main-nav__list {
-  position: static;
-  display: block;
+  @media (max-width: @mobile-only) {
+    position: static;
+    display: block;
+  }
 }
 
-.main-nav--nojs .site-list__item {
-  display: block;
+.page-header .main-nav--nojs {
+  @media (max-width: @mobile-only) {
+    margin-left: 0;
+    width: 320px;
+  }
 }
 
 .main-nav--closed .main-nav__toggle {

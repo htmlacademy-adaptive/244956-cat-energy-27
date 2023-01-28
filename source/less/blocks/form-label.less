@@ -1,0 +1,18 @@
+.form-label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @grey;
+  margin-right: 12px;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.control-input:disabled ~ .form-label {
+  color: #bababa;
+  opacity: 0.3;
+}

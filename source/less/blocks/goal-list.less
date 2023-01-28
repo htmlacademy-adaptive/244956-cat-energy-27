@@ -1,0 +1,19 @@
+.goal-list {
+  .list-style;
+  display: grid;
+  grid-template-columns: 280px;
+  grid-template-rows: auto auto;
+  grid-row-gap: 22px;
+
+  @media (min-width: @tablet) {
+    grid-template-columns: 708px;
+    grid-template-rows: auto auto;
+    grid-row-gap: 30px;
+  }
+
+  @media (min-width: @desktop) {
+    grid-template-columns: 570px 570px;
+    grid-template-rows: auto;
+    grid-gap: 80px;
+  }
+}

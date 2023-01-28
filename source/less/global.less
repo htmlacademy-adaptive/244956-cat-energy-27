@@ -2,30 +2,6 @@ html {
   height: 100%;
 }
 
-.page-body {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 400;
-  color: #000000;
-  background-color: #ffffff;
-
-  min-height: 100%;
-  min-width: 320px;
-
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-
-  margin: 0 auto;
-}
-
-.lato {
-  font-family: "Lato", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  color: #444444;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -35,83 +11,4 @@ html {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.button {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
-  text-transform: uppercase;
-
-  display: block;
-  box-sizing: border-box;
-  background-color: @main-color;
-  padding: 11px 70px;
-
-  border: none;
-
-  cursor: pointer;
-
-  &:hover {
-    background-color: #5EAA2F;
-  }
-
-  &:active {
-    background-color: #5EAA2F;
-    color: rgba(255, 255, 255, 0.3);
-  }
-}
-
-.form-label {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: @grey;
-  margin-right: 12px;
-
-  @media (min-width: @tablet) {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-
-.info-title {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 26px;
-  box-sizing: border-box;
-  width: fit-content;
-  background-color: @white;
-  padding-right: 2px;
-
-  @media (min-width: @tablet) {
-    font-size: 36px;
-    line-height: 36px;
-  }
-}
-
-.owner-info__title::before,
-.comments-field__title::before,
-.additional-checkbox__title::before {
-  position: absolute;
-  content: "";
-  width: 205px;
-  height: 2px;
-  background-color: @main-color;
-  left: 91px;
-  top: 16px;
-  z-index: -1;
-
-  @media (min-width: @tablet) {
-    top: 23px;
-    left: -26px;
-    width: 754px;
-  }
-
-  @media (min-width: @desktop) {
-    width: 1427px;
-    left: -64px;
-  }
 }
