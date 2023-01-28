@@ -12,6 +12,7 @@
   @media (min-width: @desktop) {
     width: 1440px;
     height: 400px;
+    margin-top: 0;
   }
 
   &::before {
@@ -20,15 +21,17 @@
     width: 57px;
     height: 53px;
     z-index: 3;
-    background-image: url(../../images/map-pin.png.png);
+    background-image: url("../../images/map-pin.png");
     background-repeat: no-repeat;
     background-size: contain;
-    top: calc(50% - 40px);
-    left: calc(50% - 40px);
+    top: calc(50% - 42px);
+    left: calc(50% - 25px);
 
     @media (min-width: @tablet) {
       width: 113px;
       height: 106px;
+      top: calc(50% - 51px);
+      left: calc(50% - 50px);
     }
 
     @media (min-width: @desktop) {
@@ -39,14 +42,6 @@
 }
 
 .footer-map img {
-  display: none;
-}
-
-.map-nojs img {
-  display: block;
-}
-
-.map-nojs iframe {
   display: none;
 }
 

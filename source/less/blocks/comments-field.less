@@ -10,32 +10,57 @@
 
   @media (min-width: @tablet) {
     margin-bottom: 80px;
-    padding-left: 40px;
+    padding-left: 54px;
     padding-right: 40px;
-    margin-left: -40px;
+    margin-left: -55px;
     margin-top: -10px;
     width: 275px;
   }
 
   @media (min-width: @desktop) {
-    margin-top: -3px;
+    margin-top: -6px;
+  }
+}
+
+.comments-field__title::before {
+  position: absolute;
+  content: "";
+  width: 205px;
+  height: 2px;
+  background-color: @main-color;
+  left: 91px;
+  top: 16px;
+  z-index: -1;
+
+  @media (min-width: @tablet) {
+    top: 23px;
+    left: -14px;
+    width: 764px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 1427px;
+    left: -64px;
   }
 }
 
 .comments-field__input {
   padding-right: 5px;
-  width: 260px;
+  width: 277px;
   padding-left: 14px;
   padding-top: 7px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet) {
-    width: 612px;
-    height: 152px;
+    width: 630px;
+    height: 172px;
     padding-left: 18px;
     margin-bottom: 23px;
   }
 
   @media (min-width: @desktop) {
-    width: 1195px;
+    width: 1226px;
+    padding-top: 5px;
+    margin-bottom: 25px;
   }
 }

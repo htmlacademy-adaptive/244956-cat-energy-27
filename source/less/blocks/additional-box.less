@@ -1,0 +1,63 @@
+.additional-box {
+  position: relative;
+  margin-bottom: 24px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 33px;
+  }
+}
+
+.additional-box__control-mark {
+  position: absolute;
+  top: -7px;
+  left: -46px;
+  width: 27px;
+  height: 27px;
+  border: 1px solid #cdcdcd;
+
+
+  @media (min-width: @tablet) {
+    width: 40px;
+    height: 40px;
+    left: -61px;
+    top: -7px;
+  }
+}
+
+.additional-box__control-label {
+  color: #222222;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.control-input:hover + .additional-box__control-mark {
+  border: 1px solid #bababa;
+}
+
+.control-input:disabled + .additional-box__control-mark {
+  border: 1px solid #bababa;
+  opacity: 0.3;
+}
+
+.control-input[type="checkbox"]:checked + .additional-box__control-mark::before {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 21px;
+  height: 22px;
+  background-image: url("../../images/svg/v-icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  content: "";
+
+  @media (min-width: @tablet) {
+    width: 24px;
+    height: 24px;
+    top: 9px;
+    left: 9px;
+  }
+}

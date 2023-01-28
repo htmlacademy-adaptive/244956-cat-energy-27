@@ -5,6 +5,11 @@
   position: relative;
   margin-bottom: 20px;
 
+  @media (min-width: @tablet) {
+    margin: 0 0 38px;
+    margin-left: -1px;
+  }
+
   @media (min-width: @desktop) {
     padding-left: 80px;
     width: 368px;
@@ -21,7 +26,7 @@
 
   @media (min-width: @tablet) {
     width: 165px;
-    margin-right: 40px;
+    margin-right: 39px;
   }
 
   &::before {
@@ -29,7 +34,7 @@
     content: "";
     width: 128px;
     height: 58px;
-    background-image: url(../../images/svg/weight-back.svg);
+    background-image: url("../../images/svg/weight-back.svg");
     background-repeat: no-repeat;
     background-position: center;
     left: -2px;
@@ -61,6 +66,7 @@
   @media (min-width: @tablet) {
     font-size: 30px;
     line-height: 37px;
+    margin-bottom: 12px;
   }
 
   @media (min-width: @desktop) {

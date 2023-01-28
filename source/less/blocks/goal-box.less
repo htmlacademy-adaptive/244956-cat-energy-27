@@ -1,0 +1,57 @@
+.goal-box {
+  color: @light-black;
+  position: relative;
+}
+
+.goal-box__control-mark {
+  position: absolute;
+  top: -7px;
+  left: -47px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+
+  @media (min-width: @tablet) {
+    width: 40px;
+    height: 40px;
+    left: -60px;
+    top: -4px;
+  }
+}
+
+.control-input[type="radio"]:checked + .goal-box__control-mark::before {
+  position: absolute;
+  top: 8px;
+  left: 9px;
+  width: 13px;
+  height: 13px;
+  background-color: @main-color;
+  border-radius: 50%;
+  content: "";
+
+  @media (min-width: @tablet) {
+    width: 18px;
+    height: 18px;
+    top: 11px;
+    left: 11px;
+  }
+}
+
+.goal-box__control-label {
+  color: #222222;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.control-input:hover + .goal-box__control-mark {
+  border: 1px solid #bababa;
+}
+
+.control-input:disabled + .goal-box__control-mark {
+  border: 1px solid #bababa;
+  opacity: 0.3;
+}

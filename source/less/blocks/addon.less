@@ -4,13 +4,14 @@
   grid-template-rows: repeat(3, auto);
   padding-top: 14px;
   padding-bottom: 16px;
-  border-top: 1px solid #CDCDCD;
-  border-bottom: 1px solid #CDCDCD;
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
 
   @media (min-width: @tablet) {
     grid-template-columns: 350px 350px;
+    grid-row-gap: 1px;
     grid-template-rows: repeat(2, auto);
-    border: 1px solid #CDCDCD;
+    border: 1px solid #cdcdcd;
   }
 
   @media (min-width: @desktop) {
@@ -63,11 +64,11 @@
     font-size: 16px;
     line-height: 20px;
 
-    width: 216px;
+    width: 315px;
     margin-bottom: 22px;
-    padding-right: 20px;
+    padding-right: 14px;
     margin-top: 14px;
-    margin-left: 94px;
+    margin-left: 0;
     justify-content: end;
   }
 
@@ -111,7 +112,7 @@
 
 .addon__description {
   @media (min-width: @tablet) {
-    margin-right: 3px;
+    margin-right: 14px;
   }
 
   @media (min-width: @desktop) {

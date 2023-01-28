@@ -47,7 +47,7 @@
       <section class="catalog-page__item catalog">
 
         <ul class="catalog__item product-list">
-          <li class="product-list__item product"><!--Первый товар-->
+          <li class="product-list__item product product--first"><!--Первый товар-->
               <a class="product__image-link" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)" srcset="images/product1-desktopx1.webp 1x, images/product1-desktopx2.webp 2x" width="161" height="172">
@@ -82,7 +82,7 @@
             <a class="product__button button" href="#">Заказать</a>
           </li>
 
-          <li class="product-list__item product"><!--Второй товар-->
+          <li class="product-list__item product product--even"><!--Второй товар-->
               <a class="product__image-link" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)" srcset="images/product1-desktopx2.webp 1x, images/product2-desktopx2.webp 2x" width="172" height="196">
@@ -122,7 +122,7 @@
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)" srcset="images/product3-desktopx1.webp 1x, images/product3-desktopx2.webp 2x" width="161" height="172">
                   <source type="image/webp" media="(min-width: 768px)" srcset="images/product3-tabletx1.webp 1x, images/product3-tabletx2.webp 2x" width="161" height="172">
-                  <source type="image/webp" srcset="images/product-3.webp 1x, images/product3x2.webp 2x" width="68" height="86">
+                  <source type="image/webp" srcset="images/product-3.webp 1x, images/product3x2.webp 2x" width="68" height="78">
                   <source media="(min-width: 1440px)" srcset="images/product3-desktopx1.png 1x, images/product3-desktopx2.png 2x" width="161" height="172">
                   <source media="(min-width: 768px)" srcset="images/product3-tabletx1.png 1x, images/product3-tabletx2.png 2x" width="161" height="172">
                   <img class="product__image"
@@ -152,7 +152,7 @@
             <a class="product__button button" href="#">Заказать</a>
           </li>
 
-          <li class="product-list__item product"><!--Четвертый товар-->
+          <li class="product-list__item product product--even"><!--Четвертый товар-->
               <a class="product__image-link" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)" srcset="images/product4-desktopx2.webp 1x, images/product4-desktopx2.webp 2x" width="172" height="196">
@@ -192,7 +192,7 @@
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)" srcset="images/product5-desktopx1.webp 1x, images/product5-desktopx2.webp 2x" width="161" height="172">
                   <source type="image/webp" media="(min-width: 768px)" srcset="images/product5-tabletx1.webp 1x, images/product5-tabletx2.webp 2x" width="161" height="172">
-                  <source type="image/webp" srcset="images/product-5.webp 1x, images/product5x2.webp 2x" width="68" height="86">
+                  <source type="image/webp" srcset="images/product-5.webp 1x, images/product5x2.webp 2x" width="68" height="78">
                   <source media="(min-width: 1440px)" srcset="images/product5-desktopx1.png 1x, images/product5-desktopx2.png 2x" width="161" height="172">
                   <source media="(min-width: 768px)" srcset="images/product5-tabletx1.png 1x, images/product5-tabletx2.png 2x" width="161" height="172">
                   <img class="product__image"
@@ -222,7 +222,7 @@
             <a class="product__button button" href="#">Заказать</a>
           </li>
 
-          <li class="product-list__item product"><!--Шестой товар-->
+          <li class="product-list__item product product--even"><!--Шестой товар-->
               <a class="product__image-link" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)" srcset="images/product6-desktopx2.webp 1x, images/product6-desktopx2.webp 2x" width="172" height="196">
@@ -262,7 +262,7 @@
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)" srcset="images/product7-desktopx1.webp 1x, images/product7-desktopx2.webp 2x" width="161" height="172">
                   <source type="image/webp" media="(min-width: 768px)" srcset="images/product7-tabletx1.webp 1x, images/product7-tabletx2.webp 2x" width="161" height="172">
-                  <source type="image/webp" srcset="images/product-7.webp 1x, images/product7x2.webp 2x" width="68" height="86">
+                  <source type="image/webp" srcset="images/product-7.webp 1x, images/product7x2.webp 2x" width="72" height="84">
                   <source media="(min-width: 1440px)" srcset="images/product7-desktopx1.png 1x, images/product7-desktopx2.png 2x" width="161" height="172">
                   <source media="(min-width: 768px)" srcset="images/product7-tabletx1.png 1x, images/product7-tabletx2.png 2x" width="161" height="172">
                   <img class="product__image"
@@ -295,7 +295,7 @@
           <li class="product-list__item product product-list__item--empty">
             <h3 class="product__name product__name--empty">Показать еще 100500 товаров</h3>
             <p class="product__text product__text--empty">На самом деле вкусов гораздо больше!</p>
-            <a class="button button--more" href="#">Показать все</a>
+            <a class="button button--empty" href="#">Показать все</a>
           </li>
         </ul>
 
@@ -356,8 +356,8 @@
           <h2 class="visually-hidden">Контакты офиса Cat Energy.</h2>
           <p class="footer-contacts__invitation">Приглашаем<br>к сотрудничеству дилеров!</p>
           <address class="footer-contacts__address">
-            <p class="footer-contacts__address-item">ул. Большая Конюшенная, д. 19/8</p>
-            <p class="footer-contacts__address-item">Санкт-Петербург</p>
+            <p class="footer-contacts__address-item footer-contacts__address-item--modified">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="footer-contacts__address-item footer-contacts__address-item--modified">Санкт-Петербург</p>
           </address>
           </section>
         </div>
@@ -371,7 +371,7 @@
               <img src="images/map.jpg" width="320" height="362" alt="Карта проезда к нашему офису" srcset="images/mapx2.jpg 2x">
             </picture>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7994.603450858922!2d30.317711443740404!3d59.937935387156344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sqa!4v1669656616512!5m2!1sru!2sqa"
-            width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
           </p>
 
@@ -418,7 +418,7 @@
           </ul>
         </div>
         <div class="page-footer__item copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__text">HTML Academy</span>
             <svg class="copyright__picture" width="27" height="34" fill="#666666">
               <use xlink:href="images/sprite.svg#html-academy"></use>

@@ -3,17 +3,19 @@
   height: 292px;
   background-color: @main-color;
   background-repeat: no-repeat;
-  background-image: linear-gradient(180deg,rgba(104, 183, 56, 0.9),
-                rgba(104, 183, 56, 0.9)), url("../../images/promo-cat.png");
+  background-image: linear-gradient(180deg,
+    rgba(104, 183, 56, 0.9),
+    rgba(104, 183, 56, 0.9)),
+    url("../../images/promo-cat.png");
   padding-top: 188px;
   background-size: cover;
   background-position: center;
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 
   @media (min-width: @tablet) {
     height: 200px;
-    margin-bottom: 74px;
+    margin-bottom: 73px;
   }
 
   @media (min-width: @desktop) {
@@ -30,7 +32,7 @@
 .promo::before {
   position: absolute;
   content: "";
-  background-image: url(../../images/svg/icon_gift.svg);
+  background-image: url("../../images/svg/icon_gift.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
